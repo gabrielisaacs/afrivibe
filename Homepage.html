@@ -1,12 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afrivibe - Home Page</title>
-    <link rel="stylesheet" href="index.css"/>
-</head>
-<body>
-    <h1>Afrivibe</h1>
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="navbar.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar" role="banner">
+      <nav class="frame" aria-label="Main navigation">
+        <a href="/" aria-label="Afrivibe Fashion House - Home">
+          <img
+            class="logo-nav"
+            src="./Assets/logo-nav.svg"
+            alt="Afrivibe Fashion House logo"
+          />
+        </a>
+        <ul class="div" role="list">
+          <li>
+            <a href="/" class="text-wrapper" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="/about" class="text-wrapper-2">About</a>
+          </li>
+          <li>
+            <a href="/collections" class="text-wrapper-2">Collections</a>
+          </li>
+          <li>
+            <a href="/team" class="text-wrapper-2">Team</a>
+          </li>
+          <li>
+            <a href="/contact" class="text-wrapper-2">Contact Us</a>
+          </li>
+        </ul>
+        <div class="ctaButtons">
+          <button
+            type="button"
+            class="ctaButton ctaButton1"
+            aria-label="Go to Home"
+          >
+            Home
+          </button>
+          <button
+            type="button"
+            class="ctaButton ctaButton2"
+            aria-label="Go to Shop"
+          >
+            Shop
+          </button>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
