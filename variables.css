@@ -1,0 +1,10 @@
+:root {
+  --variable-collection-green: rgba(45, 110, 99, 1);
+  --variable-collection-golden-yellow: rgba(247, 182, 51, 1);
+  --variable-collection-white: rgba(255, 255, 255, 1);
+  --variable-collection-charcoal: rgba(65, 64, 66, 1);
+  --variable-collection-orange: rgba(242, 130, 33, 1);
+  --variable-collection-cream: rgba(255, 245, 221, 1);
+  --variable-collection-brown: rgba(65, 21, 8, 1);
+  --variable-collection-charcoal-40: rgba(65, 64, 66, 0.4);
+}
