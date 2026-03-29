@@ -1,0 +1,141 @@
+@import url('variables.css');
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  height: 109px;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 100px;
+  position: relative;
+  background-color: #ffffff;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 600;
+}
+
+.navbar .frame {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.navbar .logo-nav {
+  position: relative;
+  width: 163.68px;
+  height: 50.24px;
+  margin-bottom: -0.24px;
+  aspect-ratio: 3.27;
+}
+
+.navbar .div {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 40px;
+  position: relative;
+  flex: 0 0 auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .div li {
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+.navbar .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  color: var(--variable-collection-green);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.navbar .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  color: var(--variable-collection-charcoal);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.navbar .text-wrapper-2:hover {
+  color: var(--variable-collection-green);
+}
+
+.navbar .ctaButtons {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.navbar .div-wrapper {
+  display: inline-flex;
+  min-width: 118px;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 20px;
+  background-color: #2d6e63;
+  border-radius: 10px;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+  text-decoration: none;
+  
+  /* reset default button styles */
+  border: none; 
+  cursor: pointer; 
+  font-family: inherit;
+}
+
+.navbar .ctaButton {
+  display: inline-flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+  text-decoration: none;
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+  
+  /* reset default button styles */
+  border: none; 
+  cursor: pointer;
+  font-family: inherit;
+
+  &:hover {
+    opacity: 70%;
+    transition: all 0.5s linear;
+  }
+}
+
+
+
+.ctaButton1 {
+  background-color: var(--variable-collection-orange);
+}
+
+.ctaButton2 {
+  background-color: var(--variable-collection-green);
+}
