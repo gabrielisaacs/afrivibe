@@ -1,32 +1,46 @@
 @import url(variables.css);
 
-.marquee {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 29px 0px;
-  position: relative;
-  background-color: var(--variable-collection-cream);
-  overflow: hidden;
+.marquee-container {
+    position: relative;
+    top: -1px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--variable-collection-cream);
+    padding: 29px 0;
 }
 
-.marquee .BOLD-IDENTITY {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: "Bricolage Grotesque-Bold", Helvetica;
-  font-weight: 700;
-  color: var(--variable-collection-green);
-  font-size: 72px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+.scrolling-wrapper {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
 }
 
-.marquee .text-wrapper {
-  color: #2d6e63;
+.text-group {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
-.marquee .span {
-  color: #f28221;
+.text-group span {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    color: var(--variable-collection-green);
+}
+
+.text-group .star {
+    color: var(--variable-collection-orange);
+    margin: 0 20px;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
