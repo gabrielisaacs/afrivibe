@@ -1,0 +1,239 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url(variables.css);
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  height: 882px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 168px 787px 168px 100px;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(45, 110, 99, 1) 0%,
+    rgba(25, 61, 55, 1) 100%
+  );
+}
+
+.hero-section .hero-info-group {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hero-section .hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hero-section .hero-heading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 44px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.hero-section .trust-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hero-section .trust-images {
+  position: relative;
+  width: 96px;
+  height: 32px;
+}
+
+.hero-section .image {
+  position: absolute;
+  top: -2px;
+  left: 62px;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.hero-section .img {
+  position: absolute;
+  top: -2px;
+  left: 41px;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.hero-section .image-2 {
+  position: absolute;
+  top: -2px;
+  left: 19px;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.hero-section .image-3 {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.hero-section .trust-copy {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-white);
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.hero-section .heading {
+  position: relative;
+  width: 482.05px;
+  height: 105.98px;
+}
+
+.hero-section .subheading {
+  position: relative;
+  width: 652px;
+  margin-right: -97.00px;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.hero-section .paragraph-text {
+  position: relative;
+  width: 555px;
+  height: 119px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.hero-section .hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.hero-section .button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7.32px;
+  padding: 14.63px 29.27px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--variable-collection-orange);
+  border-radius: 16px;
+}
+
+.hero-section .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.46px;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.hero-section .div-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  min-width: 172.68px;
+  align-items: center;
+  justify-content: center;
+  gap: 7.32px;
+  padding: 14.63px 29.27px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--variable-collection-white);
+  border-radius: 16px;
+}
+
+.hero-section .div {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.46px;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-green);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.hero-section .hero-image {
+  position: absolute;
+  top: 0;
+  left: 650px;
+  width: 862px;
+  height: 881px;
+  object-fit: cover;
+}
+
+.hero-section .header-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1512px;
+  height: 882px;
+}

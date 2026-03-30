@@ -1,0 +1,32 @@
+@import url(variables.css);
+
+.marquee {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 29px 0px;
+  position: relative;
+  background-color: var(--variable-collection-cream);
+  overflow: hidden;
+}
+
+.marquee .BOLD-IDENTITY {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Bricolage Grotesque-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--variable-collection-green);
+  font-size: 72px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.marquee .text-wrapper {
+  color: #2d6e63;
+}
+
+.marquee .span {
+  color: #f28221;
+}
