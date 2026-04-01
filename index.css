@@ -179,7 +179,7 @@ a {
   position: relative;
   flex: 0 0 auto;
   background-color: var(--variable-collection-orange);
-  border-radius: 16px;
+  border-radius: 10px;
 }
 
 .hero-section .text-wrapper {
@@ -206,7 +206,7 @@ a {
   position: relative;
   flex: 0 0 auto;
   background-color: var(--variable-collection-white);
-  border-radius: 16px;
+  border-radius: 10px;
 }
 
 .hero-section .div {
