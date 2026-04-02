@@ -714,3 +714,214 @@ a {
   letter-spacing: 0;
   line-height: normal;
 }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 1512px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 80px 100px;
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+.about .frame {
+  flex-direction: column;
+  width: 1280px;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  display: flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.about .div {
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.about .header-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 686px;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+}
+
+.about .section-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 16px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--black-stroke-regular-caption);
+}
+
+.about .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Geist-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--variable-collection-charcoal);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.about .heading {
+  position: relative;
+  align-self: stretch;
+  font-family: "Geist-SemiBold", Helvetica;
+  font-weight: 600;
+  color: transparent;
+  font-size: 72px;
+  letter-spacing: 0;
+  line-height: 74px;
+}
+
+.about .span {
+  color: #2d6e63;
+}
+
+.about .text-wrapper-2 {
+  color: #f28221;
+}
+
+.about .subheading {
+  position: relative;
+  width: 484px;
+  font-family: "Geist-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-charcoal);
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.about .description-cards {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.about .card {
+  width: 400px;
+  height: 243px;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.about .div-2 {
+  gap: 8px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.about .frame-2 {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+  align-self: stretch;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.about .icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  position: relative;
+  background-color: var(--variable-collection-green);
+  border-radius: 10px;
+}
+
+.about .img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.about .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  font-family: "Geist-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--secondary-text-bg);
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.about .p {
+  position: relative;
+  align-self: stretch;
+  font-family: "Geist-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--paragraph-text);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.about .read-more-button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7.32px;
+  padding: 14.63px 29.27px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--variable-collection-orange);
+  border-radius: 16px;
+}
+
+.about .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.46px;
+  font-family: "Geist-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
