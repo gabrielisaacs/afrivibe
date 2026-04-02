@@ -237,3 +237,157 @@ a {
   width: 1512px;
   height: 882px;
 }
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 160px 100px 200px;
+  position: relative;
+  background-color: var(--variable-collection-brown);
+  overflow: hidden;
+}
+
+.highlight .image {
+  position: absolute;
+  top: calc(50.00% - 308px);
+  left: 95px;
+  width: 327px;
+  height: 442px;
+  border-radius: 20.56px;
+  aspect-ratio: 0.74;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+.highlight .image img {
+  width: inherit;
+  height: inherit;
+}
+
+.highlight .section-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13.24px;
+  padding: 10.59px 21.18px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 13.24px;
+  overflow: hidden;
+  border: 1.32px solid;
+  border-color: #ffffff33;
+}
+
+.highlight .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.32px;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 500;
+  color: var(--variable-collection-white);
+  font-size: 18.5px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.highlight .frame-wrapper {
+  display: flex;
+  width: 1070px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 283.41px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.highlight .frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10.63px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.highlight .bespoke-african {
+  position: relative;
+  width: 1120px;
+  margin-top: -0.89px;
+  margin-left: -25.00px;
+  margin-right: -25.00px;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 700;
+  color: var(--variable-collection-golden-yellow);
+  font-size: 84px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 84px;
+}
+
+.highlight .span {
+  color: #ffffff;
+}
+
+.highlight .text-wrapper-2 {
+  color: #f7b633;
+}
+
+.highlight .text-wrapper-3 {
+  color: #f28221;
+}
+
+.highlight .text-wrapper-4 {
+  color: #fff4dd;
+}
+
+.highlight .text-wrapper-5 {
+  color: #8cfb7b;
+}
+
+.highlight .wow-emoji {
+  position: absolute;
+  top: 308px;
+  left: 1009px;
+  transform: rotate(-16.92deg);
+  font-family: "Geist", Helvetica;
+  font-weight: 700;
+  color: var(--variable-collection-golden-yellow);
+  font-size: 86.8px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 86.8px;
+  white-space: nowrap;
+}
+
+.highlight .man-reclining {
+  position: absolute;
+  top: 306px;
+  left: 998px;
+  width: 446px;
+  height: 463px;
+  aspect-ratio: 0.84;
+  object-fit: cover;
+}
+
+.highlight .large-star {
+  position: absolute;
+  top: 519px;
+  left: -19px;
+  transform: rotate(-15.57deg);
+  font-family: "Geist", Helvetica;
+  font-weight: 700;
+  color: var(--variable-collection-golden-yellow);
+  font-size: 540.1px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 540.1px;
+  white-space: nowrap;
+}
