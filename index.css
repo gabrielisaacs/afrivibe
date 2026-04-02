@@ -774,7 +774,7 @@ a {
   position: relative;
   width: fit-content;
   margin-top: -1.00px;
-  font-family: "Geist-Medium", Helvetica;
+  font-family: "Geist", Helvetica;
   font-weight: 500;
   color: var(--variable-collection-charcoal);
   font-size: 14px;
@@ -785,7 +785,7 @@ a {
 .about .heading {
   position: relative;
   align-self: stretch;
-  font-family: "Geist-SemiBold", Helvetica;
+  font-family: "Geist", Helvetica;
   font-weight: 600;
   color: transparent;
   font-size: 72px;
@@ -804,7 +804,7 @@ a {
 .about .subheading {
   position: relative;
   width: 484px;
-  font-family: "Geist-Regular", Helvetica;
+  font-family: "Geist", Helvetica;
   font-weight: 400;
   color: var(--variable-collection-charcoal);
   font-size: 20px;
@@ -881,7 +881,7 @@ a {
 .about .text-wrapper-3 {
   position: relative;
   width: fit-content;
-  font-family: "Geist-SemiBold", Helvetica;
+  font-family: "Geist", Helvetica;
   font-weight: 600;
   color: var(--secondary-text-bg);
   font-size: 24px;
@@ -892,7 +892,7 @@ a {
 .about .p {
   position: relative;
   align-self: stretch;
-  font-family: "Geist-Regular", Helvetica;
+  font-family: "Geist", Helvetica;
   font-weight: 400;
   color: var(--paragraph-text);
   font-size: 18px;
@@ -911,17 +911,259 @@ a {
   position: relative;
   flex: 0 0 auto;
   background-color: var(--variable-collection-orange);
-  border-radius: 16px;
+  border-radius: 10px;
 }
 
 .about .text-wrapper-4 {
   position: relative;
   width: fit-content;
   margin-top: -1.46px;
-  font-family: "Geist-SemiBold", Helvetica;
+  font-family: "Geist", Helvetica;
   font-weight: 600;
   color: #ffffff;
   font-size: 18px;
   letter-spacing: 0;
   line-height: normal;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 100px;
+  position: relative;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #f5f5f5;
+}
+
+.testimonial .frame {
+  width: 1240px;
+  justify-content: space-around;
+  gap: 24px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.testimonial .div {
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.testimonial .section-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 16px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--black-stroke-regular-caption);
+}
+
+.testimonial .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 500;
+  color: var(--variable-collection-charcoal);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.testimonial .p {
+  position: relative;
+  align-self: stretch;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 500;
+  color: var(--variable-collection-charcoal);
+  font-size: 44px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.testimonial .span {
+  color: #414042;
+}
+
+.testimonial .text-wrapper-2 {
+  color: #2d6e63;
+}
+
+.testimonial .carousel {
+  display: flex;
+  width: 1240px;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.testimonial .previous-arrow {
+  display: flex;
+  width: 54px;
+  height: 54px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 24px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1.5px solid;
+  border-color: #e5e5e5;
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.testimonial .chevron-left {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  margin-top: -6.00px;
+  margin-bottom: -6.00px;
+  margin-left: -15.00px;
+  margin-right: -15.00px;
+}
+
+.testimonial .stroke {
+  position: absolute;
+  width: 65.62%;
+  height: 78.12%;
+  top: 21.88%;
+  left: 34.38%;
+}
+
+.testimonial .previous-testimonial {
+  width: 240px;
+  height: 240px;
+  border-radius: 16px;
+  background-image: url(./img/previous-testimonial.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.testimonial .current-testimonial {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.testimonial .image {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 16px;
+  aspect-ratio: 1;
+  background-image: url(./img/image.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.testimonial .name-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.testimonial .div-wrapper {
+  justify-content: space-around;
+  gap: 6px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.testimonial .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: rgba(43, 43, 43, 1);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.testimonial .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  opacity: 0.5;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-charcoal);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.testimonial .next-testimonial {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  border-radius: 16px;
+  aspect-ratio: 1;
+  background-image: url(./img/next-testimonial.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.testimonial .forward-arrow {
+  display: flex;
+  width: 54px;
+  height: 54px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px 24px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1.5px solid;
+  border-color: #e5e5e5;
+  transform: rotate(-180deg);
+  aspect-ratio: 1;
+}
+
+.testimonial .img {
+  transform: rotate(180deg);
+  position: absolute;
+  width: 65.62%;
+  height: 78.12%;
+  top: 21.88%;
+  left: 34.38%;
 }
