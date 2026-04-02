@@ -7,4 +7,7 @@
   --variable-collection-cream: rgba(255, 245, 221, 1);
   --variable-collection-brown: rgba(65, 21, 8, 1);
   --variable-collection-charcoal-40: rgba(65, 64, 66, 0.4);
+  --black-sec-text: rgba(0, 0, 0, 0.6);
+  --black: rgba(0, 0, 0, 1);
+  --black-stroke-regular-caption: rgba(19, 19, 19, 0.1);
 }
