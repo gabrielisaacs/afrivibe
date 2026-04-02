@@ -5,6 +5,7 @@
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+
 html,
 body {
   margin: 0px;
@@ -15,6 +16,7 @@ button:focus-visible {
   outline: 2px solid #4a90e2 !important;
   outline: -webkit-focus-ring-color auto 5px !important;
 }
+
 a {
   text-decoration: none;
 }
@@ -255,7 +257,7 @@ a {
   left: 95px;
   width: 327px;
   height: 442px;
-  border-radius: 20.56px;
+  border-radius: 20px;
   aspect-ratio: 0.74;
   background: linear-gradient(
     0deg,
@@ -267,6 +269,7 @@ a {
 .highlight .image img {
   width: inherit;
   height: inherit;
+  border-radius: inherit;
 }
 
 .highlight .section-title {
@@ -1017,45 +1020,33 @@ a {
   flex: 0 0 auto;
 }
 
-.testimonial .previous-arrow {
+.testimonial .previous-arrow, .testimonial .forward-arrow {
   display: flex;
   width: 54px;
   height: 54px;
   align-items: center;
   justify-content: center;
   gap: 15px;
-  padding: 15px 24px;
-  background-color: #ffffff;
   border-radius: 10px;
+  background-color: transparent;
   border: 1.5px solid;
   border-color: #e5e5e5;
   position: relative;
   aspect-ratio: 1;
 }
 
-.testimonial .chevron-left {
+.testimonial .arrow {
   position: relative;
   width: 36px;
   height: 36px;
-  margin-top: -6.00px;
-  margin-bottom: -6.00px;
-  margin-left: -15.00px;
-  margin-right: -15.00px;
-}
-
-.testimonial .stroke {
-  position: absolute;
-  width: 65.62%;
-  height: 78.12%;
-  top: 21.88%;
-  left: 34.38%;
+  margin: auto;
 }
 
 .testimonial .previous-testimonial {
   width: 240px;
   height: 240px;
   border-radius: 16px;
-  background-image: url(./img/previous-testimonial.png);
+  background-image: url(Assets/previous-testimonial.png);
   background-size: cover;
   background-position: 50% 50%;
   position: relative;
@@ -1077,7 +1068,7 @@ a {
   height: 300px;
   border-radius: 16px;
   aspect-ratio: 1;
-  background-image: url(./img/image.png);
+  background-image: url(/Assets/image.png);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -1137,26 +1128,9 @@ a {
   height: 240px;
   border-radius: 16px;
   aspect-ratio: 1;
-  background-image: url(./img/next-testimonial.png);
+  background-image: url(./Assets/next-testimonial.png);
   background-size: cover;
   background-position: 50% 50%;
-}
-
-.testimonial .forward-arrow {
-  display: flex;
-  width: 54px;
-  height: 54px;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  padding: 15px 24px;
-  position: relative;
-  background-color: #ffffff;
-  border-radius: 10px;
-  border: 1.5px solid;
-  border-color: #e5e5e5;
-  transform: rotate(-180deg);
-  aspect-ratio: 1;
 }
 
 .testimonial .img {
@@ -1166,4 +1140,135 @@ a {
   height: 78.12%;
   top: 21.88%;
   left: 34.38%;
+}
+
+.newsletter {
+  display: flex;
+  height: 490px;
+  align-items: center;
+  gap: 50px;
+  padding: 0px 100px 0px 0px;
+  position: relative;
+  background-color: var(--variable-collection-brown);
+}
+
+.newsletter .pexels-photo-by {
+  position: relative;
+  align-self: stretch;
+  width: 500px;
+  object-fit: cover;
+}
+
+.newsletter .section-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 719px;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+}
+
+.newsletter .heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-white);
+  font-size: 72px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.newsletter .text-wrapper {
+  color: #ffffff;
+}
+
+.newsletter .tribe {
+  color: #f7b633;
+}
+
+.newsletter .container {
+  display: flex;
+  flex-direction: column;
+  width: 631px;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.newsletter .headline {
+  align-self: stretch;
+  margin-top: -1.00px;
+  opacity: 0.8;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  font-size: 18px;
+  position: relative;
+  color: var(--variable-collection-white);
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.newsletter .email-field {
+  display: inline-flex;
+  align-items: center;
+  width: 418px;
+  height: 52px;
+  gap: auto;
+  padding: 4px 4px 4px 24px;
+  background-color: var(--variable-collection-green);
+  border-radius: 16px;
+}
+
+.email-field .button {
+  all: unset;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 20px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: white;
+  color: var(--variable-collection-charcoal);
+  border-radius: 12px;
+}
+
+#newsletter-input {
+  background-color: var(--variable-collection-green);
+  border: none;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.email-field input::placeholder {
+  color: white;
+}
+
+.email-field input:focus {
+  outline: none;
+}
+
+.newsletter .caption-regular-semi {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 500;
+  color: var(--variable-collection-charcoal);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
 }

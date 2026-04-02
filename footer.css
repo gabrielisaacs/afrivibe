@@ -1,2 +1,333 @@
 @import url(variables.css);
 
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 635px;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 80px 0px 0px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.footer .main-content {
+  display: flex;
+  width: 1304px;
+  height: 295px;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer .about-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+  position: relative;
+  flex: auto;
+}
+
+.footer .vector {
+  position: relative;
+  width: 150.34px;
+  height: 75.82px;
+}
+
+.footer .text-wrapper {
+  position: relative;
+  width: 366px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: #13173599;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.footer .footer-nav {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  flex: auto;
+}
+
+.footer .section {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  flex: auto;
+}
+
+.footer .heading {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 700;
+  color: var(--variable-collection-green);
+  font-size: 18px;
+  letter-spacing: -0.36px;
+  line-height: normal;
+}
+
+.footer .div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: auto;
+}
+
+.footer .text-wrapper-2 {
+  position: relative;
+  width: 95px;
+  margin-top: -1px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-charcoal);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer .text-wrapper-3 {
+  position: relative;
+  width: 95px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-charcoal);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer .text-wrapper-4 {
+  position: relative;
+  width: 223px;
+  margin-top: -1px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-charcoal);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer .text-wrapper-5 {
+  position: relative;
+  width: 158px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-charcoal);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer .text-wrapper-6 {
+  position: relative;
+  width: 196px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-charcoal);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer .text-wrapper-7 {
+  position: relative;
+  width: 222px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-charcoal);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer .text-wrapper-8 {
+  position: relative;
+  width: 129px;
+  margin-top: -1px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-charcoal);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer .text-wrapper-9 {
+  position: relative;
+  width: 57px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-charcoal);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer .text-wrapper-10 {
+  position: relative;
+  width: 179px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-charcoal);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer .text-wrapper-11 {
+  position: relative;
+  width: 149px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: var(--variable-collection-charcoal);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer .sub-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.footer .filled-pattern {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.footer .top-pattern {
+width: 100%;
+}
+
+.footer .copyright-container {
+  display: flex;
+  height: 201px;
+  margin-top: -3px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 100px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: var(--variable-collection-green);
+  background-image: url(Assets/header-pattern.svg);
+}
+
+.footer .text-wrapper-12 {
+  display: inline-flex;
+  align-items: center;
+  gap: 80px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.footer .p {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.footer .text-wrapper-13 {
+  position: relative;
+  width: fit-content;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: #ffffffcc;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.footer .socials {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.footer .div-2 {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.footer .vector-2 {
+  position: absolute;
+  width: 93.75%;
+  height: 93.75%;
+  top: 6.25%;
+  left: 6.25%;
+}
+
+.footer .vector-3 {
+  position: absolute;
+  width: 77.98%;
+  height: 75.44%;
+  top: 24.56%;
+  left: 22.02%;
+}
+
+.footer .div-3 {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  align-items: flex-start;
+  gap: 8.57px;
+  padding: 17.14px;
+  position: relative;
+  border-radius: 64.29px;
+  overflow: hidden;
+  border: 1.07px solid;
+  border-color: #ffffff33;
+  aspect-ratio: 1;
+}
+
+footer .nav-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  
+}
