@@ -1,0 +1,66 @@
+@import url("variables.css");
+@import url(index.css);
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.about-header__background {
+  position: relative;
+  width: 100%;
+  height: 698px;
+  background: linear-gradient(
+    180deg,
+    rgba(65, 21, 8, 1) 0%,
+    rgba(68, 16, 1, 1) 100%
+  );
+  background-color: var(--variable-collection-brown);
+}
+
+.about-header__pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1512px;
+  height: 698px;
+}
+
+.about-header__title {
+  position: absolute;
+  top: 97px;
+  left: calc(50% - 508px);
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 700;
+  color: var(--variable-collection-cream);
+  font-size: 298.7px;
+  letter-spacing: 0;
+  line-height: 298.7px;
+  white-space: nowrap;
+}
+
+.about-header__image {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 474px);
+  width: 950px;
+  height: 698px;
+  aspect-ratio: 0.8;
+  object-fit: cover;
+}
+
+.about-header__subtitle {
+  position: absolute;
+  top: 306px;
+  left: calc(50% - 355px);
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 700;
+  color: var(--variable-collection-white);
+  font-size: 298.7px;
+  letter-spacing: 0;
+  line-height: 298.7px;
+  white-space: nowrap;
+}

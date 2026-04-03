@@ -1,4 +1,5 @@
 @import url('variables.css');
+@import url('index.css');
 
 .navbar {
   display: flex;
@@ -123,12 +124,6 @@
   cursor: pointer;
   font-family: inherit;
 }
-
-.button:hover {
-  opacity: 70%;
-  transition: all 0.5s linear;
-}
-
 
 .button--primary {
   background-color: var(--variable-collection-orange);
