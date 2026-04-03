@@ -448,11 +448,11 @@ a {
 }
 
 .featured__heading .text-accent--default {
-  color: #2d6e63;
+  color: var(--variable-collection-green);
 }
 
 .featured__heading .text-accent--brown {
-  color: #411508;
+  color: var(--variable-collection-brown);
 }
 
 .featured__sidebar {
