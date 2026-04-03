@@ -10,7 +10,7 @@ footer {
   background-color: #ffffff;
 }
 
-.footer .footer-container {
+.footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +23,7 @@ footer {
   flex-grow: 1;
 }
 
-.footer .main-content {
+.footer__main {
   display: flex;
   width: 1304px;
   height: 295px;
@@ -32,7 +32,7 @@ footer {
   position: relative;
 }
 
-.footer .about-wrapper {
+.footer__about {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -41,13 +41,13 @@ footer {
   flex: auto;
 }
 
-.footer .vector {
+.footer__logo {
   position: relative;
   width: 150.34px;
   height: 75.82px;
 }
 
-.footer .text-wrapper {
+.footer__description {
   position: relative;
   width: 366px;
   font-family: "Geist", Helvetica;
@@ -58,7 +58,7 @@ footer {
   line-height: 28px;
 }
 
-.footer .footer-nav {
+.footer__nav {
   display: inline-flex;
   align-items: flex-start;
   gap: 10px;
@@ -66,7 +66,7 @@ footer {
   flex: auto;
 }
 
-.footer .section {
+.footer__nav-section {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -75,7 +75,7 @@ footer {
   flex: auto;
 }
 
-.footer .heading {
+.footer__heading {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
@@ -87,7 +87,7 @@ footer {
   line-height: normal;
 }
 
-.footer .div {
+.footer__links-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -98,10 +98,8 @@ footer {
   flex: auto;
 }
 
-.footer .text-wrapper-2 {
+.footer__link {
   position: relative;
-  width: 95px;
-  margin-top: -1px;
   font-family: "Geist", Helvetica;
   font-weight: 400;
   color: var(--variable-collection-charcoal);
@@ -110,108 +108,7 @@ footer {
   line-height: normal;
 }
 
-.footer .text-wrapper-3 {
-  position: relative;
-  width: 95px;
-  font-family: "Geist", Helvetica;
-  font-weight: 400;
-  color: var(--variable-collection-charcoal);
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.footer .text-wrapper-4 {
-  position: relative;
-  width: 223px;
-  margin-top: -1px;
-  font-family: "Geist", Helvetica;
-  font-weight: 400;
-  color: var(--variable-collection-charcoal);
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.footer .text-wrapper-5 {
-  position: relative;
-  width: 158px;
-  font-family: "Geist", Helvetica;
-  font-weight: 400;
-  color: var(--variable-collection-charcoal);
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.footer .text-wrapper-6 {
-  position: relative;
-  width: 196px;
-  font-family: "Geist", Helvetica;
-  font-weight: 400;
-  color: var(--variable-collection-charcoal);
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.footer .text-wrapper-7 {
-  position: relative;
-  width: 222px;
-  font-family: "Geist", Helvetica;
-  font-weight: 400;
-  color: var(--variable-collection-charcoal);
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.footer .text-wrapper-8 {
-  position: relative;
-  width: 129px;
-  margin-top: -1px;
-  font-family: "Geist", Helvetica;
-  font-weight: 400;
-  color: var(--variable-collection-charcoal);
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.footer .text-wrapper-9 {
-  position: relative;
-  width: 57px;
-  font-family: "Geist", Helvetica;
-  font-weight: 400;
-  color: var(--variable-collection-charcoal);
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.footer .text-wrapper-10 {
-  position: relative;
-  width: 179px;
-  font-family: "Geist", Helvetica;
-  font-weight: 400;
-  color: var(--variable-collection-charcoal);
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.footer .text-wrapper-11 {
-  position: relative;
-  width: 149px;
-  font-family: "Geist", Helvetica;
-  font-weight: 400;
-  color: var(--variable-collection-charcoal);
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.footer .sub-content {
+.footer__sub-content {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -221,17 +118,17 @@ footer {
   flex: 0 0 auto;
 }
 
-.footer .filled-pattern {
+.footer__pattern {
   position: relative;
   width: 100%;
   height: auto;
 }
 
-.footer .top-pattern {
-width: 100%;
+.footer__pattern-wrapper {
+  width: 100%;
 }
 
-.footer .copyright-container {
+.footer__copyright {
   display: flex;
   height: 201px;
   margin-top: -3px;
@@ -245,7 +142,7 @@ width: 100%;
   background-image: url(Assets/header-pattern.svg);
 }
 
-.footer .text-wrapper-12 {
+.footer__copyright-content {
   display: inline-flex;
   align-items: center;
   gap: 80px;
@@ -253,7 +150,7 @@ width: 100%;
   flex: 0 0 auto;
 }
 
-.footer .p {
+.footer__copyright-text {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -265,7 +162,7 @@ width: 100%;
   line-height: normal;
 }
 
-.footer .text-wrapper-13 {
+.footer__legal-link {
   position: relative;
   width: fit-content;
   font-family: "Geist", Helvetica;
@@ -278,7 +175,7 @@ width: 100%;
   white-space: nowrap;
 }
 
-.footer .socials {
+.footer__socials {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -286,14 +183,14 @@ width: 100%;
   flex: 0 0 auto;
 }
 
-.footer .div-2 {
+.footer__social-icon {
   width: 24px;
   height: 24px;
   position: relative;
   aspect-ratio: 1;
 }
 
-.footer .vector-2 {
+.footer__social-icon-vector {
   position: absolute;
   width: 93.75%;
   height: 93.75%;
@@ -301,7 +198,7 @@ width: 100%;
   left: 6.25%;
 }
 
-.footer .vector-3 {
+.footer__social-icon-vector-secondary {
   position: absolute;
   width: 77.98%;
   height: 75.44%;
@@ -309,7 +206,7 @@ width: 100%;
   left: 22.02%;
 }
 
-.footer .div-3 {
+.footer__social-button {
   display: flex;
   width: 60px;
   height: 60px;
@@ -324,10 +221,9 @@ width: 100%;
   aspect-ratio: 1;
 }
 
-footer .nav-pattern {
+.footer__nav-pattern {
   position: absolute;
   top: 0;
   left: 0;
   width: auto;
-  
 }

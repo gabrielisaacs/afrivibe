@@ -18,42 +18,42 @@
   </head>
   <body>
     <header class="navbar" role="banner">
-      <nav class="frame" aria-label="Main navigation">
+      <nav class="navbar__frame" aria-label="Main navigation">
         <a href="/" aria-label="Afrivibe Fashion House - Home">
           <img
-            class="logo-nav"
+            class="navbar__logo"
             src="./Assets/logo-nav.svg"
             alt="Afrivibe Fashion House logo"
           />
         </a>
-        <ul class="div" role="list">
-          <li>
-            <a href="/" class="text-wrapper" aria-current="page">Home</a>
+        <ul class="navbar__nav-list" role="list">
+          <li class="navbar__nav-item">
+            <a href="/" class="nav-link--active" aria-current="page">Home</a>
           </li>
-          <li>
-            <a href="/about" class="text-wrapper-2">About</a>
+          <li class="navbar__nav-item">
+            <a href="/about" class="nav-link">About</a>
           </li>
-          <li>
-            <a href="/collections" class="text-wrapper-2">Collections</a>
+          <li class="navbar__nav-item">
+            <a href="/collections" class="nav-link">Collections</a>
           </li>
-          <li>
-            <a href="/team" class="text-wrapper-2">Team</a>
+          <li class="navbar__nav-item">
+            <a href="/team" class="nav-link">Team</a>
           </li>
-          <li>
-            <a href="/contact" class="text-wrapper-2">Contact Us</a>
+          <li class="navbar__nav-item">
+            <a href="/contact" class="nav-link">Contact Us</a>
           </li>
         </ul>
-        <div class="ctaButtons">
+        <div class="navbar__cta-group">
           <button
             type="button"
-            class="ctaButton ctaButton1"
+            class="button button--primary"
             aria-label="Go to Home"
           >
             Home
           </button>
           <button
             type="button"
-            class="ctaButton ctaButton2"
+            class="button button--secondary"
             aria-label="Go to Shop"
           >
             Shop
@@ -70,10 +70,10 @@
           <div class="hero-heading-wrapper">
             <div class="trust-tag">
               <div class="trust-images">
-                <img class="image" src="Assets/image4.png" />
-                <img class="img" src="Assets/image3.png" />
-                <img class="image-2" src="Assets/image2.png" />
-                <img class="image-3" src="Assets/image1.png" />
+                <img class="trust-badge__avatar" src="Assets/image4.png" />
+                <img class="trust-badge__avatar" src="Assets/image3.png" />
+                <img class="trust-badge__avatar" src="Assets/image2.png" />
+                <img class="trust-badge__avatar" src="Assets/image1.png" />
               </div>
               <div class="trust-copy">12k+ Trusted Customers</div>
             </div>
@@ -89,11 +89,11 @@
           </p>
         </div>
         <div class="hero-cta">
-          <button class="button">
-            <div class="text-wrapper">Shop now</div>
+          <button class="button--primary">
+            <div class="button__text">Shop now</div>
           </button>
-          <button class="div-wrapper">
-            <div class="div">Explore our looks</div>
+          <button class="button--outline">
+            <div class="button__text--secondary">Explore our looks</div>
           </button>
         </div>
       </div>
@@ -132,27 +132,27 @@
     <!-- Highlight section -->
 
     <div class="highlight">
-      <div class="image">
+      <div class="highlight__featured-image">
         <img src="Assets/Frame 2147228525.png" />
       </div>
-      <div class="section-title">
-        <div class="text-wrapper">#THEAFRICANVIBE</div>
+      <div class="highlight__tag">
+        <div class="highlight__tag-text">#THEAFRICANVIBE</div>
       </div>
-      <div class="frame-wrapper">
-        <div class="frame">
+      <div class="highlight__content-wrapper">
+        <div class="highlight__frame">
           <p class="bespoke-african">
-            <span class="span">BESPOKE </span>
-            <span class="text-wrapper-2">AFRICAN</span>
-            <span class="span"> WEARS THAT</span>
-            <span class="text-wrapper-3">&nbsp;</span>
-            <span class="text-wrapper-4">TURN HEADS</span>
-            <span class="span"> AND SPARK </span>
-            <span class="text-wrapper-2">✦</span>
-            <span class="span">&nbsp;</span>
-            <span class="text-wrapper-3">MEANINGFUL</span>
-            <span class="span">&nbsp;</span>
-            <span class="text-wrapper-5">CONVERSATIONS</span>
-            <span class="span">💬</span>
+            <span class="text-accent--default">BESPOKE </span>
+            <span class="text-accent--gold">AFRICAN</span>
+            <span class="text-accent--default"> WEARS THAT</span>
+            <span class="text-accent--orange">&nbsp;</span>
+            <span class="text-accent--cream">TURN HEADS</span>
+            <span class="text-accent--default"> AND SPARK </span>
+            <span class="text-accent--gold">✦</span>
+            <span class="text-accent--default">&nbsp;</span>
+            <span class="text-accent--orange">MEANINGFUL</span>
+            <span class="text-accent--default">&nbsp;</span>
+            <span class="text-accent--green">CONVERSATIONS</span>
+            <span class="text-accent--default">💬</span>
           </p>
         </div>
       </div>
@@ -161,166 +161,195 @@
       <div class="large-star">*</div>
     </div>
 
-    <!-- faetured section -->
+    <!-- featured section -->
 
-    <div class="featured">
-      <div class="frame">
-        <div class="div">
-          <div class="section-title">
-            <div class="text-wrapper">Featured Collections</div>
+    <div class="featured" id="featured__section">
+      <div class="featured__header">
+        <div class="featured__header-content">
+          <div class="featured__tag">
+            <div class="featured__tag-text">Featured Collections</div>
           </div>
-          <p class="heading">
-            <span class="span">Curated for the </span>
-            <span class="text-wrapper-2">Culture.</span>
+          <p class="featured__heading">
+            <span class="text-accent--default">Curated for the </span>
+            <span class="text-accent--brown">Culture.</span>
           </p>
         </div>
-        <div class="paragraph-wrapper">
-          <p class="subheading">
+        <div class="featured__sidebar">
+          <p class="featured__description">
             Handpicked ensembles that blend ancestral craftsmanship with modern
             silhouettes.
           </p>
-          <div class="arrows-wrapper">
-            <div class="forward-arrow">
-              <img class="chevron-left" src="Assets/chevron left.svg" />
+          <div class="carousel-controls">
+            <div class="carousel-button">
+              <img
+                class="carousel-button__icon"
+                src="Assets/chevron right.svg"
+              />
             </div>
-            <div class="previous-arrow">
-              <img class="img" src="Assets/chevron right.svg" />
+            <div class="carousel-button next-arrow__button">
+              <!-- <img
+                class="carousel-button__icon next-arrow__icon"
+                src="Assets/chevron left2.svg"
+              /> -->
+              <svg
+                class="carousel-button__icon next-arrow__icon"
+                width="36"
+                height="36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.5 27l-9-9 9-9"
+                  stroke="#fff"
+                  stroke-width="2.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
           </div>
         </div>
       </div>
       <div class="products-wrapper">
         <div class="product-card">
-          <div class="frame-2">
+          <div class="product-card__image">
             <img src="Assets/Frame 2147228524.png" alt="" />
           </div>
-          <div class="frame-3">
-            <div class="frame-4">
-              <div class="text-wrapper-3">Radiant Glow Cream</div>
-              <p class="p">Deep hydration for smooth, luminous skin.</p>
+          <div class="product-card__details">
+            <div class="product-card__info">
+              <div class="product-card__title">Radiant Glow Cream</div>
+              <p class="product-card__description">
+                Deep hydration for smooth, luminous skin.
+              </p>
             </div>
-            <div class="text-wrapper-4">$28.00</div>
+            <div class="product-card__price">$28.00</div>
           </div>
         </div>
         <div class="product-card">
-          <div class="frame-2">
+          <div class="product-card__image">
             <img src="Assets/Screenshot 2026-02-24 225640 1.png" alt="" />
           </div>
-          <div class="frame-3">
-            <div class="frame-4">
-              <div class="text-wrapper-3">Flawless Finish Foundation</div>
-              <p class="p">Even coverage for a natural, radiant look.</p>
+          <div class="product-card__details">
+            <div class="product-card__info">
+              <div class="product-card__title">Flawless Finish Foundation</div>
+              <p class="product-card__description">
+                Even coverage for a natural, radiant look.
+              </p>
             </div>
-            <div class="text-wrapper-4">$15.00</div>
+            <div class="product-card__price">$15.00</div>
           </div>
         </div>
         <div class="product-card">
-          <div class="frame-2">
+          <div class="product-card__image">
             <img src="Assets/Screenshot 2025-11-18 071445 1.png" alt="" />
           </div>
-          <div class="frame-3">
-            <div class="frame-4">
-              <div class="text-wrapper-3">Hydra Restore Moisturizer</div>
-              <p class="p">
+          <div class="product-card__details">
+            <div class="product-card__info">
+              <div class="product-card__title">Hydra Restore Moisturizer</div>
+              <p class="product-card__description">
                 Lightweight cream that replenishes and soothes skin.
               </p>
             </div>
-            <div class="text-wrapper-4">$32.00</div>
+            <div class="product-card__price">$32.00</div>
           </div>
         </div>
         <div class="product-card">
-          <div class="frame-2">
+          <div class="product-card__image">
             <img src="Assets/Frame 2147228521.png" alt="" />
           </div>
-          <div class="frame-3">
-            <div class="frame-4">
-              <div class="text-wrapper-3">Revive Radiance Serum</div>
-              <p class="p">Powerful formula to brighten and restore glow.</p>
+          <div class="product-card__details">
+            <div class="product-card__info">
+              <div class="product-card__title">Revive Radiance Serum</div>
+              <p class="product-card__description">
+                Powerful formula to brighten and restore glow.
+              </p>
             </div>
-            <div class="text-wrapper-4">$48.00</div>
+            <div class="product-card__price">$48.00</div>
           </div>
         </div>
         <div class="product-card">
-          <div class="frame-2">
+          <div class="product-card__image">
             <img src="Assets/Frame 2147228522.png" alt="" />
           </div>
-          <div class="frame-3">
-            <div class="frame-4">
-              <div class="text-wrapper-5">Revive Radiance Serum</div>
-              <p class="p">Powerful formula to brighten and restore glow.</p>
+          <div class="product-card__details">
+            <div class="product-card__info">
+              <div class="product-card__title">Revive Radiance Serum</div>
+              <p class="product-card__description">
+                Powerful formula to brighten and restore glow.
+              </p>
             </div>
-            <div class="text-wrapper-6">$48.00</div>
+            <div class="product-card__price">$48.00</div>
           </div>
         </div>
       </div>
-      <div class="view-all-button">
-        <div class="text-wrapper-7">View All Products</div>
+      <div class="button--view-all">
+        <div class="button__text--view-all">View All Products</div>
       </div>
     </div>
 
     <!-- About us section -->
 
     <div class="about">
-      <div class="frame">
-        <div class="div">
-          <div class="header-wrapper">
-            <div class="section-title">
-              <div class="text-wrapper">About us</div>
+      <div class="about__container">
+        <div class="about__header">
+          <div class="about__header-wrapper">
+            <div class="about__tag">
+              <div class="about__tag-text">About us</div>
             </div>
-            <p class="heading">
-              <span class="span">Truly African. </span>
-              <span class="text-wrapper-2">Built for Impact.</span>
+            <p class="about__heading">
+              <span class="text-accent--default">Truly African. </span>
+              <span class="text-accent--highlight">Built for Impact.</span>
             </p>
           </div>
-          <p class="subheading">
+          <p class="about__description">
             What began as a side project between two creatives quickly turned
             into a mission-driven agency helping brands disrupt, resonate, and
             scale.
           </p>
         </div>
-        <div class="description-cards">
-          <div class="card">
-            <div class="div-2">
-              <div class="frame-2">
-                <div class="icon">
-                  <img class="img" src="Assets/flash.svg" />
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-card__content">
+              <div class="feature-card__header">
+                <div class="feature-card__icon-box">
+                  <img class="feature-card__icon" src="Assets/flash.svg" />
                 </div>
-                <div class="text-wrapper-3">Strategic Expertise</div>
+                <div class="feature-card__title">Strategic Expertise</div>
               </div>
-              <p class="p">
+              <p class="feature-card__description">
                 We create data-driven strategies that boost brand awareness
               </p>
             </div>
           </div>
-          <div class="card">
-            <div class="div-2">
-              <div class="frame-2">
-                <div class="icon">
-                  <img class="img" src="Assets/magicpen.svg" />
+          <div class="feature-card">
+            <div class="feature-card__content">
+              <div class="feature-card__header">
+                <div class="feature-card__icon-box">
+                  <img class="feature-card__icon" src="Assets/magicpen.svg" />
                 </div>
-                <div class="text-wrapper-3">Excellent Creativity</div>
+                <div class="feature-card__title">Excellent Creativity</div>
               </div>
-              <p class="p">
+              <p class="feature-card__description">
                 Our bold ideas deliver real results and have earned recognition
               </p>
             </div>
           </div>
-          <div class="card">
-            <div class="div-2">
-              <div class="frame-2">
-                <div class="icon">
-                  <img class="img" src="Assets/unlimited.svg" />
+          <div class="feature-card">
+            <div class="feature-card__content">
+              <div class="feature-card__header">
+                <div class="feature-card__icon-box">
+                  <img class="feature-card__icon" src="Assets/unlimited.svg" />
                 </div>
-                <div class="text-wrapper-3">Always By Your Side</div>
+                <div class="feature-card__title">Always By Your Side</div>
               </div>
-              <p class="p">
+              <p class="feature-card__description">
                 We stay responsive and committed from starting to finishing
               </p>
             </div>
           </div>
         </div>
-        <button class="read-more-button">
-          <div class="text-wrapper-4">Read more</div>
+        <button class="button--read-more">
+          <div class="button__text--read-more">Read more</div>
         </button>
       </div>
     </div>
@@ -328,39 +357,57 @@
     <!-- Testimonial section -->
 
     <div class="testimonial">
-      <div class="frame">
-        <div class="div">
-          <div class="section-title">
-            <div class="text-wrapper">Testimonials</div>
+      <div class="testimonial__header">
+        <div class="testimonial__header-content">
+          <div class="testimonial__tag">
+            <div class="testimonial__tag-text">Testimonials</div>
           </div>
-          <p class="p">
-            <span class="span"
+          <p class="testimonial__quote">
+            <span class="text-accent--default"
               >This trip was an unforgettable experience! Everything was
               seamless, and the personalized touch made it extra special.
             </span>
-            <span class="text-wrapper-2"
+            <span class="text-accent--primary"
               >I can’t wait for my next journey!</span
             >
           </p>
         </div>
       </div>
-      <div class="carousel">
-        <button class="previous-arrow">
-          <img class="arrow" src="Assets/chevron left.svg" />
+      <div class="testimonial__carousel">
+        <button class="carousel-button">
+          <img class="carousel-button__icon" src="Assets/chevron right.svg" />
         </button>
-        <div class="previous-testimonial"></div>
-        <div class="current-testimonial">
-          <div class="image"></div>
-          <div class="name-wrapper">
-            <div class="div-wrapper">
-              <div class="text-wrapper-3">James Carter</div>
+
+        <div class="testimonial__avatar testimonial__slide--prev">
+          <img
+            class="testimonial__avatar"
+            src="Assets/previous-testimonial.png"
+            alt=""
+          />
+        </div>
+
+        <div class="current__testimonial--slide">
+          <div class="current__testimonial">
+            <img src="Assets/image.png" alt="" class="testimonial__avatar" />
+          </div>
+          <div class="testimonial__name-wrapper">
+            <div class="testimonial__name-content">
+              <div class="testimonial__name">James Carter</div>
             </div>
-            <div class="text-wrapper-4">Jo’Burg, South Africa</div>
+            <div class="testimonial__location">Jo'Burg, South Africa</div>
           </div>
         </div>
-        <div class="next-testimonial"></div>
-        <button class="forward-arrow">
-          <img class="arrow" src="Assets/chevron left2.svg" />
+
+        <div class="testimonial__slide--next">
+          <img
+            class="testimonial__avatar"
+            src="Assets/next-testimonial.png"
+            alt=""
+          />
+        </div>
+
+        <button class="carousel-button">
+          <img class="carousel-button__icon" src="Assets/chevron left2.svg" />
         </button>
       </div>
     </div>
@@ -369,26 +416,26 @@
 
     <div class="newsletter">
       <img class="pexels-photo-by" src="/Assets/african print.png" />
-      <div class="section-wrapper">
-        <p class="heading">
-          <span class="text-wrapper">Join the </span>
-          <span class="tribe">&nbsp;Tribe</span>
+      <div class="newsletter__container">
+        <p class="newsletter__heading">
+          <span class="text-accent--white">Join the </span>
+          <span class="text-accent--gold">&nbsp;Tribe</span>
           <span class="tribe-emoji">🪇</span>
         </p>
-        <div class="container">
-          <p class="headline">
+        <div class="newsletter__form">
+          <p class="newsletter__description">
             Join our community and be the first to receive exclusive offers,
             expert fashion tips, and early access to exciting new product
             launches—delivered straight to your inbox.
           </p>
-          <div class="email-field">
+          <div class="newsletter__email-input">
             <input
               type="email"
               name=""
               id="newsletter-input"
               placeholder="Enter email"
             />
-            <button class="button">Subscribe</button>
+            <button class="button--submit">Subscribe</button>
           </div>
         </div>
       </div>
@@ -397,64 +444,69 @@
     <!-- Footer -->
 
     <footer class="footer">
-      <div class="footer-container">
-        <div class="main-content">
-          <div class="about-wrapper">
-            <img class="vector" src="/Assets/logo-nav.svg" />
-            <p class="text-wrapper">
+      <div class="footer__container">
+        <div class="footer__main">
+          <div class="footer__about">
+            <img class="footer__logo" src="/Assets/logo-nav.svg" />
+            <p class="footer__description">
               Afrivibe delivers reliable and blah blah blah-driven fashion
               solutions that simplify fashion fashion in fashion whatever.
             </p>
           </div>
-          <div class="footer-nav">
-            <div class="section">
-              <div class="heading">Explore</div>
-              <div class="div">
-                <div class="text-wrapper-2">Home</div>
-                <div class="text-wrapper-3">About Us</div>
-                <div class="text-wrapper-3">Solutions</div>
-                <div class="text-wrapper-3">Blog</div>
+          <div class="footer__nav">
+            <div class="footer__nav-section">
+              <div class="footer__heading">Explore</div>
+              <div class="footer__links-group">
+                <div class="footer__link">Home</div>
+                <div class="footer__link">About Us</div>
+                <div class="footer__link">Solutions</div>
+                <div class="footer__link">Blog</div>
               </div>
             </div>
-            <div class="section">
-              <div class="heading">Solutions</div>
-              <div class="div">
-                <div class="text-wrapper-4">Freight Management</div>
-                <div class="text-wrapper-5">Order Tracking</div>
-                <div class="text-wrapper-6">Carrier Integration</div>
-                <div class="text-wrapper-7">Analytics Dashboard</div>
+            <div class="footer__nav-section">
+              <div class="footer__heading">Solutions</div>
+              <div class="footer__links-group">
+                <div class="footer__link">Freight Management</div>
+                <div class="footer__link">Order Tracking</div>
+                <div class="footer__link">Carrier Integration</div>
+                <div class="footer__link">Analytics Dashboard</div>
               </div>
             </div>
-            <div class="section">
-              <div class="heading">Resources</div>
-              <div class="div">
-                <div class="text-wrapper-8">Help Center</div>
-                <div class="text-wrapper-9">FAQs</div>
-                <div class="text-wrapper-10">Terms of Service</div>
-                <div class="text-wrapper-11">Privacy Policy</div>
+            <div class="footer__nav-section">
+              <div class="footer__heading">Resources</div>
+              <div class="footer__links-group">
+                <div class="footer__link">Help Center</div>
+                <div class="footer__link">FAQs</div>
+                <div class="footer__link">Terms of Service</div>
+                <div class="footer__link">Privacy Policy</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="sub-content">
-          <div class="top-pattern">
-            <img class="filled-pattern" src="Assets/pattern-filled.svg" />
+        <div class="footer__sub-content">
+          <div class="footer__pattern-wrapper">
+            <img class="footer__pattern" src="Assets/pattern-filled.svg" />
           </div>
-          <div class="copyright-container">
-            <div class="text-wrapper-12">
-              <p class="p">©2026 Afrivibe. All Rights Reserved.</p>
-              <div class="text-wrapper-13">Terms &amp; Condition</div>
-              <div class="text-wrapper-13">Privacy Policies</div>
+          <div class="footer__copyright">
+            <div class="footer__copyright-content">
+              <p class="footer__copyright-text">
+                ©2026 Afrivibe. All Rights Reserved.
+              </p>
+              <div class="footer__legal-link">Terms &amp; Condition</div>
+              <div class="footer__legal-link">Privacy Policies</div>
             </div>
-            <div class="socials">
-              <div class="div-3">
-                <img class="div-2" src="/Assets/twitter.svg" />
+            <div class="footer__socials">
+              <div class="footer__social-button">
+                <img class="footer__social-icon" src="/Assets/twitter.svg" />
               </div>
-              <div class="div-3">
-                <img class="div-2" src="Assets/instagram-fill.svg" />
+              <div class="footer__social-button">
+                <img
+                  class="footer__social-icon"
+                  src="Assets/instagram-fill.svg"
+                />
               </div>
-              <div class="div-3">
-                <img class="div-2" src="Assets/Linkedin.svg" />
+              <div class="footer__social-button">
+                <img class="footer__social-icon" src="Assets/Linkedin.svg" />
               </div>
             </div>
           </div>

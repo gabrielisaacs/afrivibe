@@ -13,7 +13,7 @@
   font-weight: 600;
 }
 
-.navbar .frame {
+.navbar__frame {
   display: flex;
   justify-content: space-between;
   align-self: stretch;
@@ -23,7 +23,7 @@
   flex: 0 0 auto;
 }
 
-.navbar .logo-nav {
+.navbar__logo {
   position: relative;
   width: 163.68px;
   height: 50.24px;
@@ -31,7 +31,7 @@
   aspect-ratio: 3.27;
 }
 
-.navbar .div {
+.navbar__nav-list {
   display: inline-flex;
   align-items: flex-end;
   gap: 40px;
@@ -42,12 +42,12 @@
   padding: 0;
 }
 
-.navbar .div li {
+.navbar__nav-item {
   display: inline-flex;
   align-items: flex-end;
 }
 
-.navbar .text-wrapper {
+.nav-link--active {
   position: relative;
   width: fit-content;
   margin-top: -1.00px;
@@ -58,7 +58,7 @@
   text-decoration: none;
 }
 
-.navbar .text-wrapper-2 {
+.nav-link {
   position: relative;
   width: fit-content;
   margin-top: -1.00px;
@@ -69,11 +69,11 @@
   text-decoration: none;
 }
 
-.navbar .text-wrapper-2:hover {
+.nav-link:hover {
   color: var(--variable-collection-green);
 }
 
-.navbar .ctaButtons {
+.navbar__cta-group {
   display: inline-flex;
   gap: 10px;
   align-items: center;
@@ -81,7 +81,7 @@
   flex: 0 0 auto;
 }
 
-.navbar .div-wrapper {
+.button--secondary {
   display: inline-flex;
   min-width: 118px;
   justify-content: center;
@@ -100,7 +100,7 @@
   font-family: inherit;
 }
 
-.navbar .ctaButton {
+.button {
   display: inline-flex;
   justify-content: center;
   gap: 5px;
@@ -110,7 +110,6 @@
   position: relative;
   flex: 0 0 auto;
   text-decoration: none;
-  position: relative;
   width: fit-content;
   margin-top: -1.00px;
   font-weight: 700;
@@ -123,18 +122,18 @@
   border: none; 
   cursor: pointer;
   font-family: inherit;
+}
 
-  &:hover {
-    opacity: 70%;
-    transition: all 0.5s linear;
-  }
+.button:hover {
+  opacity: 70%;
+  transition: all 0.5s linear;
 }
 
 
-.ctaButton1 {
+.button--primary {
   background-color: var(--variable-collection-orange);
 }
 
-.ctaButton2 {
+.button--secondary {
   background-color: var(--variable-collection-green);
 }
