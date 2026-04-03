@@ -64,3 +64,133 @@
   line-height: 298.7px;
   white-space: nowrap;
 }
+
+
+.about__container {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-end;
+width: 100%;
+padding: 160px 100px;
+position: relative;
+background-color: #fffffff0;
+border-radius: 2px;
+overflow: hidden;
+border: 1px solid;
+border-color: #ffffff1a;
+}
+
+.about__content {
+display: flex;
+height: 711px;
+align-items: flex-start;
+justify-content: space-between;
+position: relative;
+align-self: stretch;
+width: 100%;
+}
+
+.about__story-section {
+display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+position: relative;
+flex: 0 0 auto;
+margin-bottom: -77.00px;
+}
+
+.about__story-header {
+display: flex;
+flex-direction: column;
+width: 514px;
+height: 166px;
+align-items: flex-start;
+gap: 12px;
+position: relative;
+
+}
+
+.badge {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+padding: 8px 16px;
+position: relative;
+flex: 0 0 auto;
+border-radius: 10px;
+overflow: hidden;
+border: 1px solid;
+border-color: var(--black-stroke-regular-caption);
+
+}
+
+.badge__text {
+position: relative;
+width: fit-content;
+margin-top: -1.00px;
+font-family: "Bricolage Grotesque", Helvetica;
+font-weight: 500;
+color: var( --variable-collection-charcoal);
+font-size: 14px;
+letter-spacing: 0;
+line-height: normal;
+}
+
+.about__title {
+position: relative;
+align-self: stretch;
+height: 151px;
+margin-bottom: -29.00px;
+font-family: "Bricolage Grotesque", Helvetica;
+font-weight: 700;
+color: var( --variable-collection-green);
+font-size: 72px;
+letter-spacing: 0;
+line-height: 74px;
+}
+
+.about__description-section {
+display: flex;
+flex-direction: column;
+width: 637px;
+align-items: flex-start;
+position: relative;
+flex: 0 0 auto;
+}
+
+.about__description {
+position: relative;
+align-self: stretch;
+height: 322px;
+margin-top: -1.00px;
+font-family: "Geist", Helvetica;
+font-weight: 400;
+color: #000000;
+font-size: 18px;
+letter-spacing: 0;
+line-height: normal;
+}
+
+.about__description-extended {
+position: relative;
+width: 637px;
+height: 300px;
+font-family: "Geist", Helvetica;
+font-weight: 400;
+color: #000000;
+font-size: 18px;
+letter-spacing: 0;
+line-height: normal;
+
+}
+
+.about__image {
+position: relative;
+width: 545px;
+height: 711px;
+object-fit: cover;
+border-radius: 16px;
+margin-left: auto;
+}
