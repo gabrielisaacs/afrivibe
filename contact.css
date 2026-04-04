@@ -1,0 +1,408 @@
+@import url('variables.css');
+@import url('index.css');
+
+.contact-hero {
+  background-image: url(/Assets/contact\ hero\ image.png);
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  height: 818px;
+  padding: 160px 100px;
+  position: relative;
+  background-position-y: -50px;
+}
+
+.heading {
+    font-family: "Bricolage Grotesque", Helvetica;
+    color: white;
+    font-weight: 700;
+    font-size: 198px;
+    line-height: 80%;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+}
+
+.contact {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 100px;
+  padding-top: 200px;
+  position: relative;
+}
+
+.contact .frame {
+  border: 2px solid black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.contact .div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+}
+
+.contact .wrap {
+      border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 474px;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.contact .heading {
+  align-items: flex-start;
+  align-self: stretch;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.contact .div-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 16px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #0000001a;
+}
+
+.contact .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 500;
+  color: var(--variable-collection-charcoal);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contact .heading-2 {
+  width: 319px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.contact .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-green);
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contact .we-re-here-to-help {
+  position: relative;
+  align-self: stretch;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: #414042b2;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contact .frame-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.contact .twitter {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 8.57px;
+  padding: 17.14px;
+  border-radius: 64.29px;
+  overflow: hidden;
+  border: 1.07px solid;
+  border-color: #00000033;
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.contact .div-2 {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.contact .vector {
+  position: absolute;
+  width: 93.75%;
+  height: 93.75%;
+  top: 6.25%;
+  left: 6.25%;
+}
+
+.contact .img {
+  position: absolute;
+  width: 77.98%;
+  height: 75.44%;
+  top: 24.56%;
+  left: 22.02%;
+}
+
+.contact .div-3 {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  align-items: flex-start;
+  gap: 8.57px;
+  padding: 17.14px;
+  position: relative;
+  border-radius: 64.29px;
+  overflow: hidden;
+  border: 1.07px solid;
+  border-color: #00000033;
+  aspect-ratio: 1;
+}
+
+.contact .linkedin {
+  position: relative;
+  top: calc(50.00% - 11px);
+  left: calc(50.00% - 11px);
+  width: 21px;
+  height: 21px;
+  aspect-ratio: 1;
+  background-image: url(./img/image.svg);
+  background-size: 100% 100%;
+}
+
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  width: 621px;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+}
+
+.contact .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.contact .cards {
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 0 auto;
+  display: flex;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.contact .frame-3 {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 147px 13px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.contact .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.50px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contact .frame-wrapper {
+  height: 48px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #000000;
+  display: flex;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.contact .frame-4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.contact .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.50px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contact .outline-arrow-down {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.contact .vuesax-outline-arrow {
+  width: 24px;
+  height: 24px;
+  display: flex;
+}
+
+.contact .arrow-down {
+  flex: 1;
+  width: 24px;
+  position: relative;
+}
+
+.contact .vector-2 {
+  position: absolute;
+  width: 86.11%;
+  height: 65.82%;
+  top: 34.18%;
+  left: 13.89%;
+}
+/* 
+.contact .vector-3 {
+  position: absolute;
+  width: 5800%;
+  height: 5329.17%;
+  top: -5229.17%;
+  left: -5700%;
+} */
+
+.contact .cards-2 {
+  flex-direction: column;
+  height: 144px;
+  align-items: flex-start;
+  display: flex;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.contact .frame-5 {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 240px 12px 16px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  flex-grow: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.contact .p {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  margin-right: -13.00px;
+  font-family: "Geist", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.contact .button {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: var(--variable-collection-green);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  font-family: "Bricolage Grotesque", Helvetica;
+  font-weight: 600;
+  color: var(--variable-collection-white);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
