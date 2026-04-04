@@ -258,3 +258,117 @@ aspect-ratio: 1.06;
 object-fit: cover;
 }
 
+.about-vision-mission {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-end;
+padding: 100px;
+position: relative;
+background-color: var(--variable-collection-white);
+border-radius: 2px;
+overflow: hidden;
+border: 1px solid;
+border-color: #ffffff1a;
+}
+
+.about-vision-mission__content {
+flex-direction: column;
+gap: 30px;
+align-self: stretch;
+width: 100%;
+flex: 0 0 auto;
+display: flex;
+align-items: flex-start;
+position: relative;
+}
+
+.about-vision-mission__vision-card {
+width: 1312px;
+justify-content: space-around;
+gap: 79px;
+padding: 60px;
+flex: 0 0 auto;
+background-color: var(--variable-collection-green);
+border-radius: 16px;
+display: flex;
+align-items: flex-start;
+position: relative;
+}
+
+.about-vision-mission__vision-content {
+flex-direction: column;
+height: 308px;
+gap: 29px;
+flex: 1;
+flex-grow: 1;
+display: flex;
+align-items: flex-start;
+position: relative;
+}
+
+.about-vision-mission__vision-title {
+color: var(--variable-collection-golden-yellow);
+font-size: 84px;
+position: relative;
+width: fit-content;
+margin-top: -1.00px;
+font-family: "Bricolage Grotesque", Helvetica;
+font-weight: 700;
+letter-spacing: 0;
+line-height: 74px;
+white-space: nowrap;
+}
+
+.about-vision-mission__vision-description {
+position: relative;
+align-self: stretch;
+font-family: "Geist", Helvetica;
+font-weight: 400;
+color: #ffffff;
+font-size: 48px;
+letter-spacing: 0;
+line-height: normal;
+}
+
+.about-vision-mission__mission-section {
+width: 1312px;
+height: 657px;
+justify-content: space-between;
+display: flex;
+align-items: flex-start;
+position: relative;
+}
+
+.about-vision-mission__image {
+position: relative;
+width: 610px;
+height: 657px;
+object-fit: cover;
+border-radius: 16px;
+}
+
+.about-vision-mission__mission-card {
+display: flex;
+flex-direction: column;
+width: 665px;
+align-items: flex-start;
+gap: 29px;
+padding: 60px;
+position: relative;
+background-color: var(--variable-collection-orange);
+border-radius: 16px;
+}
+
+.about-vision-mission__mission-title {
+color: var(--variable-collection-brown);
+font-size: 72px;
+position: relative;
+width: fit-content;
+margin-top: -1.00px;
+font-family: "Bricolage Grotesque", Helvetica;
+font-weight: 700;
+letter-spacing: 0;
+line-height: 74px;
+white-space: nowrap;
+}
