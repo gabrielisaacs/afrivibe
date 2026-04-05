@@ -1,11 +1,11 @@
-.frame {
+.team-hero {
   position: relative;
   width: 100%;
   height: 698px;
   background-color: var(--variable-collection-golden-yellow);
 }
 
-.frame .vector {
+.team-hero__pattern {
   position: absolute;
   top: 0;
   left: 0;
@@ -13,7 +13,7 @@
   height: 698px;
 }
 
-.frame .screenshot {
+.team-hero__image {
   position: absolute;
   top: 0;
   left: 906px;
@@ -23,12 +23,12 @@
   object-fit: cover;
 }
 
-.frame .text-wrapper {
+.team-hero__title-word {
   position: absolute;
   top: 70px;
   left: calc(50.00% - 552px);
   width: 837px;
-  font-family: "Bricolage Grotesque-Bold", Helvetica;
+  font-family: "Bricolage Grotesque", Helvetica;
   font-weight: 700;
   color: var(--variable-collection-white);
   font-size: 300px;
@@ -37,11 +37,11 @@
   white-space: nowrap;
 }
 
-.frame .div {
+.team-hero__title-main {
   position: absolute;
   top: 308px;
   left: calc(50.00% - 358px);
-  font-family: "Bricolage Grotesque-Bold", Helvetica;
+  font-family: "Bricolage Grotesque", Helvetica;
   font-weight: 700;
   color: var(--variable-collection-white);
   font-size: 300px;
@@ -50,26 +50,12 @@
   white-space: nowrap;
 }
 
-.frame .div-wrapper {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  position: absolute;
-  top: 373px;
-  left: 222px;
-  background-color: #f28221;
-  border-radius: 1000px;
-}
-
-.frame .text-wrapper-2 {
+.team-hero__title-article {
   display: flex;
   position: absolute;
   width: 200px;
   height: 200px;
-  font-family: "Bricolage Grotesque-Bold", Helvetica;
+  font-family: "Bricolage Grotesque", Helvetica;
   font-weight: 700;
   color: #411508;
   font-size: 100px;
@@ -84,7 +70,7 @@
   border-radius: 1000px;
 }
 
-.team__section {
+.team-statement {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -93,7 +79,7 @@
   background-color: var(--variable-collection-cream);
 }
 
-.team__section .team__div {
+.team-statement__content {
   display: inline-flex;
   height: 353px;
   align-items: flex-start;
@@ -103,11 +89,11 @@
   position: relative;
 }
 
-.team__section .team__quote {
+.team-statement__quote {
   position: relative;
   width: 538px;
   height: 217px;
-  font-family: "Geist-SemiBold", Helvetica;
+  font-family: "Geist", Helvetica;
   font-weight: 600;
   color: var(--variable-collection-green);
   font-size: 40px;
@@ -115,22 +101,17 @@
   line-height: 52.0px;
 }
 
-.team__section .text-main {
+.team-statement__text {
   color: #2d6e63;
   letter-spacing: -0.32px;
 }
 
-.team__section .cut {
-  color: #f28221;
-  letter-spacing: -0.32px;
-}
-
-.team__section .text-quote-mark {
+.team-statement__mark {
   position: absolute;
   top: -119px;
   left: -19px;
   width: 173px;
-  font-family: "Geist-SemiBold", Helvetica;
+  font-family: "Geist", Helvetica;
   font-weight: 600;
   color: var(--variable-collection-green);
   font-size: 400px;
@@ -139,7 +120,7 @@
   white-space: nowrap;
 }
 
-.team__section .afrivibe-is-the-wrapper {
+.team-statement__wrapper {
   display: flex;
   width: 662px;
   align-items: center;
@@ -152,11 +133,11 @@
   position: relative;
 }
 
-.team__section .afrivibe-is-the {
+.team-statement__description {
   position: relative;
   align-self: stretch;
   margin-top: -1.00px;
-  font-family: "Geist-SemiBold", Helvetica;
+  font-family: "Geist", Helvetica;
   font-weight: 600;
   color: #fff4dd;
   font-size: 20px;
@@ -169,40 +150,33 @@
   width: 248px;
   height: 248px;
   border-radius: 16px;
-  background: linear-gradient(
-    0deg,
-    rgba(225, 225, 225, 1) 0%,
-    rgba(225, 225, 225, 1) 100%
-  );
-}
-/* Original CSS injected here */
-
-.content1 {
-  position: relative;
-  width: 248px;
-  height: 248px;
-  border-radius: 16px;
-  background: linear-gradient(
-    0deg,
-    rgba(225, 225, 225, 1) 0%,
-    rgba(225, 225, 225, 1) 100%
-  );
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
 
-.content1-image {
+.content1,
+.team-member-card__image-wrapper {
+  background: linear-gradient(
+    0deg,
+    rgba(225, 225, 225, 1) 0%,
+    rgba(225, 225, 225, 1) 100%
+  );
+}
+
+.content1-image,
+.content-image,
+.team-member-card__image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center top;
   display: block;
   border-radius: 16px;
 }
 
 
-.group-members {
+.team-members {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -211,12 +185,36 @@
   padding: 100px;
   position: relative;
   background-color: #ffffff;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-color: #f5f5f5;
 }
 
-.group-members .header-wrapper {
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--black-stroke-regular-caption);
+}
+
+.badge__text {
+  position: relative;
+  width: fit-content;
+  font-family: "Geist", Helvetica;
+  font-weight: 500;
+  color: var(--variable-collection-charcoal-duplicate);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.text-accent--gold {
+  color: #f28221;
+}
+
+.team-members__header {
   display: flex;
   flex-direction: column;
   width: 686px;
@@ -226,181 +224,10 @@
   flex: 0 0 auto;
 }
 
-.group-members .section-title {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 8px 16px;
-  position: relative;
-  flex: 0 0 auto;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid;
-  border-color: var(--black-stroke-regular-caption);
-}
-
-.group-members .text-wrapper {
+.team-members--section__title {
   position: relative;
   width: fit-content;
-  margin-top: -1.00px;
-  font-family: "Geist-Medium", Helvetica;
-  font-weight: 500;
-  color: var(--variable-collection-charcoal-duplicate);
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.group-members .heading {
-  position: relative;
-  width: fit-content;
-  font-family: "Geist-SemiBold", Helvetica;
-  font-weight: 600;
-  color: var(--variable-collection-charcoal-duplicate);
-  font-size: 72px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 74px;
-  white-space: nowrap;
-}
-
-.group-members .subheading {
-  position: relative;
-  width: 440px;
-  opacity: 0.8;
-  font-family: "Geist-Regular", Helvetica;
-  font-weight: 400;
-  color: var(--black-sec-text);
-  font-size: 18px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.group-members .components {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1121px;
-  align-items: flex-start;
-  gap: 43px 43px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.group-members .content {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 18px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.group-members .div {
-  position: relative;
-  border: 2px solid;
-  width: 248px;
-  height: 248px;
-  border-radius: 16px;
-  background: linear-gradient(
-    0deg,
-    rgba(225, 225, 225, 1) 0%,
-    rgba(225, 225, 225, 1) 100%
-  );
-}
-
-.group-members .profile {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.group-members .text-wrapper-2 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: var(--body-b1-semi-b-font-family);
-  font-weight: var(--body-b1-semi-b-font-weight);
-  color: var(--black);
-  font-size: var(--body-b1-semi-b-font-size);
-  letter-spacing: var(--body-b1-semi-b-letter-spacing);
-  line-height: var(--body-b1-semi-b-line-height);
-  font-style: var(--body-b1-semi-b-font-style);
-}
-
-.group-members .text-wrapper-3 {
-  position: relative;
-  width: fit-content;
-  font-family: var(--body-b2-reg-font-family);
-  font-weight: var(--body-b2-reg-font-weight);
-  color: var(--grey-1);
-  font-size: var(--body-b2-reg-font-size);
-  letter-spacing: var(--body-b2-reg-letter-spacing);
-  line-height: var(--body-b2-reg-line-height);
-  font-style: var(--body-b2-reg-font-style);
-}
-/* ============================================================
-   Original style.css content injected below
-   ============================================================ */
-
-/* .group-members {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 100px;
-  position: relative;
-  background-color: #ffffff;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-color: #f5f5f5;
-}
-
-.group-members .header-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 686px;
-  align-items: center;
-  gap: 12px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.group-members .section-title {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 8px 16px;
-  position: relative;
-  flex: 0 0 auto;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid;
-  border-color: var(--black-stroke-regular-caption);
-}
-
-.group-members .text-wrapper {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: "Geist-Medium", Helvetica;
-  font-weight: 500;
-  color: var(--variable-collection-charcoal-duplicate);
-  font-size: 14px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.group-members .heading {
-  position: relative;
-  width: fit-content;
-  font-family: "Geist-SemiBold", Helvetica;
+  font-family: "Bricolage Grotesque", Helvetica;
   font-weight: 600;
   color: var(--variable-collection-charcoal-duplicate);
   font-size: 72px;
@@ -411,21 +238,20 @@
   margin: 0;
 }
 
-.group-members .subheading {
+.team-members--section__subtitle {
   position: relative;
   width: 440px;
   opacity: 0.8;
-  font-family: "Geist-Regular", Helvetica;
+  font-family: "Geist", Helvetica;
   font-weight: 400;
   color: var(--black-sec-text);
   font-size: 18px;
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
-  margin: 0;
 }
 
-.group-members .components {
+.team-members__grid {
   display: flex;
   flex-wrap: wrap;
   width: 1121px;
@@ -433,12 +259,9 @@
   gap: 43px 43px;
   position: relative;
   flex: 0 0 auto;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.group-members .content {
+.team-member-card {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -447,48 +270,47 @@
   flex: 0 0 auto;
 }
 
-.group-members .div {
+.team-member-card__image-wrapper {
   position: relative;
   width: 248px;
   height: 248px;
   border-radius: 16px;
-  background: linear-gradient(
-    0deg,
-    rgba(225, 225, 225, 1) 0%,
-    rgba(225, 225, 225, 1) 100%
-  );
+  overflow: hidden;
 }
 
-.group-members .profile {
+.team-member-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.team-member-card__info {
   display: inline-flex;
   flex-direction: column;
+  width: 100%;
   align-items: flex-start;
   gap: 8px;
   position: relative;
   flex: 0 0 auto;
 }
 
-.group-members .text-wrapper-2 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: var(--body-b1-semi-b-font-family);
-  font-weight: var(--body-b1-semi-b-font-weight);
-  color: var(--black);
-  font-size: var(--body-b1-semi-b-font-size);
-  letter-spacing: var(--body-b1-semi-b-letter-spacing);
-  line-height: var(--body-b1-semi-b-line-height);
-  font-style: var(--body-b1-semi-b-font-style);
+.team-member-card__name, .team-member-card__role {
+  font-family: "Geist", Helvetica;
+  font-weight: 600;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.group-members .text-wrapper-3 {
-  position: relative;
-  width: fit-content;
-  font-family: var(--body-b2-reg-font-family);
-  font-weight: var(--body-b2-reg-font-weight);
-  color: var(--grey-1);
-  font-size: var(--body-b2-reg-font-size);
-  letter-spacing: var(--body-b2-reg-letter-spacing);
-  line-height: var(--body-b2-reg-line-height);
-  font-style: var(--body-b2-reg-font-style);
-} */
+.team-member-card__name {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.team-member-card__role {
+  font-weight: 400;
+  font-size: 16px;
+}

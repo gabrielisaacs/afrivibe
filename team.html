@@ -66,120 +66,206 @@
     </header>
 
     <!--Hero section-->
-   
-    <div class="frame">
-      <img class="vector" src="Assets/about-header-pattern.svg" />
-      <img class="screenshot" src="Assets/981f8604ed6342d1181fa0d35210fc9d1ccdb6af.png" />
-      <div class="text-wrapper">Meet</div>
-      <div class="div">Team</div>
-      <div class="text-wrapper-2">the</div>
+
+    <div class="team-hero">
+      <img class="team-hero__pattern" src="Assets/about-header-pattern.svg" />
+      <img
+        class="team-hero__image"
+        src="Assets/981f8604ed6342d1181fa0d35210fc9d1ccdb6af.png"
+      />
+      <div class="team-hero__title-word">Meet</div>
+      <div class="team-hero__title-main">Team</div>
+      <div class="team-hero__title-article">the</div>
     </div>
 
-    <div class="team__section">
-      <div class="team__div">
-        <p class="team__quote">
-          <span class="text-main"> are a team of <span class="cut">Software Engineers</span> brought together by a shared 
-          goal to bring a <span class="cut">fashion house</span> to life. </span>
-          <br>
-          <br>
+    <!-- Team section -->
+
+    <div class="team-statement">
+      <div class="team-statement__content">
+        <p class="team-statement__quote">
+          <span class="team-statement__text">
+            are a team of
+            <span class="text-accent--gold">Software Engineers</span> brought
+            together by a shared goal to bring a
+            <span class="text-accent--gold">fashion house</span> to life.
+          </span>
+          <br />
+          <br />
         </p>
-        <div class="text-quote-mark">“</div>
+        <div class="team-statement__mark">"</div>
       </div>
-      <div class="afrivibe-is-the-wrapper">
-        <p class="afrivibe-is-the">
-          AfriVibe is the result of our collective effort, creativity, and collaboration. As part of this project, we
-          worked together to design and develop a platform that reflects the identity of a modern African fashion brand.
-          This project is not just an assignment, but a representation of our ability to turn ideas into practical
-          solutions.<br /><br />Within the team, members contributed in different ways based on their strengths, from
-          design and user experience to development and problem-solving. Those with technical experience supported
-          others by putting ideas into practice while also guiding and sharing knowledge throughout the process. This
-          allowed everyone to learn, grow, and actively participate.<br /><br />Every decision we made, from the brand
-          name to the design direction and implementation, was carried out collectively through majority votes, ensuring
-          that everyone had a voice and ownership of the final outcome.
+      <div class="team-statement__wrapper">
+        <p class="team-statement__description">
+          AfriVibe is the result of our collective effort, creativity, and
+          collaboration. As part of this project, we worked together to design
+          and develop a platform that reflects the identity of a modern African
+          fashion brand. This project is not just an assignment, but a
+          representation of our ability to turn ideas into practical
+          solutions.<br /><br />Within the team, members contributed in
+          different ways based on their strengths, from design and user
+          experience to development and problem-solving. Those with technical
+          experience supported others by putting ideas into practice while also
+          guiding and sharing knowledge throughout the process. This allowed
+          everyone to learn, grow, and actively participate.<br /><br />Every
+          decision we made, from the brand name to the design direction and
+          implementation, was carried out collectively through majority votes,
+          ensuring that everyone had a voice and ownership of the final outcome.
         </p>
       </div>
     </div>
 
-    <section class="group-members">
-      <header class="header-wrapper">
-        <div class="section-title">
-          <span class="text-wrapper">About us</span>
+    <section class="team-members">
+      <header class="team-members__header">
+        <div class="badge">
+          <span class="badge__text">About us</span>
         </div>
-        <h1 class="heading">Our Team</h1>
-        <p class="subheading">Handpicked ensembles that blend ancestral craftsmanship with modern silhouettes.</p>
+        <h1 class="team-members--section__title">Our Team</h1>
+        <p class="team-members--section__subtitle">
+          Handpicked ensembles that blend ancestral craftsmanship with modern
+          silhouettes.
+        </p>
       </header>
-      <ul class="components" aria-label="Team members">
-        <li class="content">
-          <!-- <div class="div" role="img" aria-label="Photo of John Kenson"></div> -->
-            <figure class="content1">
-                <img
-                    class="content-image"
-                    src="Assets/Photo of John Kenson.png"
-                    alt="Professional headshot of a smiling man with a beard wearing a grey suit and white shirt"
-                />
-            </figure>
-          <div class="profile">
-            <span class="text-wrapper-2">John Kenson</span>
-            <span class="text-wrapper-3">CFO</span>
+      <div class="team-members__grid" role="region" aria-label="Team members">
+        <article class="team-member-card">
+          <figure class="team-member-card__image-wrapper">
+            <img class="team-member-card__image" src="Assets/akanimo.jpeg" />
+          </figure>
+          <div class="team-member-card__info">
+            <h3 class="team-member-card__name">Akanimo Essien</h3>
+            <p class="team-member-card__role">a.essien9639@miva.edu.ng</p>
           </div>
-        </li>
-        <li class="content">
-          <div class="div" role="img" aria-label="Photo of Noah Moore"></div>
-          <div class="profile">
-            <span class="text-wrapper-2">Noah Moore</span>
-            <span class="text-wrapper-3">CEO</span>
+        </article>
+        <article class="team-member-card">
+          <div
+            class="team-member-card__image-wrapper"
+            role="img"
+            aria-label="Photo of Gift Ayozieuwa"
+          >
+            <img class="team-member-card__image" src="Assets/angel   ss.png" />
           </div>
-        </li>
-        <li class="content">
-          <div class="div" role="img" aria-label="Photo of Sophie Clarke"></div>
-          <div class="profile">
-            <span class="text-wrapper-2">Sophie Clarke</span>
-            <span class="text-wrapper-3">CMO</span>
+          <div class="team-member-card__info">
+            <h3 class="team-member-card__name">Gift Ayozieuwa</h3>
+            <p class="team-member-card__role">g.ayozieuwa8187@miva.edu.ng</p>
           </div>
-        </li>
-        <li class="content">
-          <div class="div" role="img" aria-label="Photo of Eddy Denison"></div>
-          <div class="profile">
-            <span class="text-wrapper-2">Eddy Denison</span>
-            <span class="text-wrapper-3">CTO</span>
+        </article>
+        <article class="team-member-card">
+          <div
+            class="team-member-card__image-wrapper"
+            role="img"
+            aria-label="Photo of Ikakke Archibong"
+          >
+            <img class="team-member-card__image" src="Assets/ikakke.png" />
           </div>
-        </li>
-        <li class="content">
-          <div class="div" role="img" aria-label="Photo of Eddy Denison"></div>
-          <div class="profile">
-            <span class="text-wrapper-2">Eddy Denison</span>
-            <span class="text-wrapper-3">CTO</span>
+          <div class="team-member-card__info">
+            <h3 class="team-member-card__name">Ikakke Archibong</h3>
+            <p class="team-member-card__role">i.archibong8296@miva.edu.ng</p>
           </div>
-        </li>
-        <li class="content">
-          <div class="div" role="img" aria-label="Photo of Eddy Denison"></div>
-          <div class="profile">
-            <span class="text-wrapper-2">Eddy Denison</span>
-            <span class="text-wrapper-3">CTO</span>
+        </article>
+        <article class="team-member-card">
+          <div
+            class="team-member-card__image-wrapper"
+            role="img"
+            aria-label="Photo of Muritala Adebayo"
+          >
+            <img class="team-member-card__image" src="Assets/muritala.png" />
           </div>
-        </li>
-        <li class="content">
-          <div class="div" role="img" aria-label="Photo of Eddy Denison"></div>
-          <div class="profile">
-            <span class="text-wrapper-2">Eddy Denison</span>
-            <span class="text-wrapper-3">CTO</span>
+          <div class="team-member-card__info">
+            <h3 class="team-member-card__name">Muritala Adebayo</h3>
+            <p class="team-member-card__role">m.adebayo4229@miva.edu.ng</p>
           </div>
-        </li>
-        <li class="content">
-          <div class="div" role="img" aria-label="Photo of Eddy Denison"></div>
-          <div class="profile">
-            <span class="text-wrapper-2">Eddy Denison</span>
-            <span class="text-wrapper-3">CTO</span>
+        </article>
+        <article class="team-member-card">
+          <div
+            class="team-member-card__image-wrapper"
+            role="img"
+            aria-label="Photo of Funmilayo Awolola"
+          >
+            <img class="team-member-card__image" src="Assets/royals.png" />
           </div>
-        </li>
-        <li class="content">
-          <div class="div" role="img" aria-label="Photo of Eddy Denison"></div>
-          <div class="profile">
-            <span class="text-wrapper-2">Eddy Denison</span>
-            <span class="text-wrapper-3">CTO</span>
+          <div class="team-member-card__info">
+            <h3 class="team-member-card__name">Funmilayo Awolola</h3>
+            <p class="team-member-card__role">f.awolola4738@miva.edu.ng</p>
           </div>
-        </li>
-      </ul>
+        </article>
+        <article class="team-member-card">
+          <div
+            class="team-member-card__image-wrapper"
+            role="img"
+            aria-label="Photo of Opeyemi Alabi"
+          >
+            <img class="team-member-card__image" src="Assets/temidayo.png" />
+          </div>
+          <div class="team-member-card__info">
+            <h3 class="team-member-card__name">Opeyemi Alabi</h3>
+            <p class="team-member-card__role">o.alabi9680@miva.edu.ng</p>
+          </div>
+        </article>
+        <article class="team-member-card">
+          <div
+            class="team-member-card__image-wrapper"
+            role="img"
+            aria-label="Photo of Gabriel Isaac"
+          >
+            <img class="team-member-card__image" src="Assets/Gabriel.jpeg" />
+          </div>
+          <div class="team-member-card__info">
+            <h3 class="team-member-card__name">Gabriel Isaac</h3>
+            <p class="team-member-card__role">g.isaac8315@miva.edu.ng</p>
+          </div>
+        </article>
+        <article class="team-member-card">
+          <div
+            class="team-member-card__image-wrapper"
+            role="img"
+            aria-label="Photo of Victor Oghenemaro"
+          >
+            <img class="team-member-card__image" src="Assets/maro.png" />
+          </div>
+          <div class="team-member-card__info">
+            <h3 class="team-member-card__name">Victor Oghenemaro</h3>
+            <p class="team-member-card__role">v.oghenemaro5753@miva.edu.ng</p>
+          </div>
+        </article>
+        <article class="team-member-card">
+          <div
+            class="team-member-card__image-wrapper"
+            role="img"
+            aria-label="Photo of Jude Suleiman Abu"
+          >
+            <img class="team-member-card__image" src="Assets/jsulab.jpeg" />
+          </div>
+          <div class="team-member-card__info">
+            <h3 class="team-member-card__name">Jude Suleiman Abu</h3>
+            <p class="team-member-card__role">J.abu9783@miva.edu.ng</p>
+          </div>
+        </article>
+        <article class="team-member-card">
+          <div
+            class="team-member-card__image-wrapper"
+            role="img"
+            aria-label="Photo of John Kelechi Gideon"
+          >
+            <img class="team-member-card__image" src="Assets/onyedikachi.png" />
+          </div>
+          <div class="team-member-card__info">
+            <h3 class="team-member-card__name">John Kelechi Gideon</h3>
+            <p class="team-member-card__role">j.kelechi1473@miva.edu.ng</p>
+          </div>
+        </article>
+        <article class="team-member-card">
+          <div
+            class="team-member-card__image-wrapper"
+            role="img"
+            aria-label="Photo of Chintuwa Lucky"
+          >
+            <img class="team-member-card__image" src="Assets/" />
+          </div>
+          <div class="team-member-card__info">
+            <h3 class="team-member-card__name">Chintuwa Lucky</h3>
+            <p class="team-member-card__role">l.chintuwa9579@miva.edu.ng</p>
+          </div>
+        </article>
+      </div>
     </section>
 
     <!-- Marquee -->
@@ -187,30 +273,44 @@
     <marquee scrollamount="0" class="marquee-container">
       <div class="scrolling-wrapper">
         <div class="text-group">
-          <span style="color: rgba(65, 21, 8, 1);">BOLD IDENTITY</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
-          <span style="color: rgba(65, 21, 8, 1);">VIBRANT CREATIVITY</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
-          <span style="color: rgba(65, 21, 8, 1);">TIMELESS STYLE</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
-          <span style="color: rgba(65, 21, 8, 1);">AFRICAN ROOTS</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
-          <span style="color: rgba(65, 21, 8, 1);">GLOBAL VISION</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
-          <span style="color: rgba(65, 21, 8, 1);">BOLD IDENTITY</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
-          <span style="color: rgba(65, 21, 8, 1);">VIBRANT CREATIVITY</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
-          <span style="color: rgba(65, 21, 8, 1);">TIMELESS STYLE</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">BOLD IDENTITY</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">VIBRANT CREATIVITY</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">TIMELESS STYLE</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">AFRICAN ROOTS</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">GLOBAL VISION</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">BOLD IDENTITY</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">VIBRANT CREATIVITY</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">TIMELESS STYLE</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
         </div>
 
         <div class="text-group" aria-hidden="true">
-          <span style="color: rgba(65, 21, 8, 1);">BOLD IDENTITY</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
-          <span style="color: rgba(65, 21, 8, 1);">VIBRANT CREATIVITY</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
-          <span style="color: rgba(65, 21, 8, 1);">TIMELESS STYLE</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
-          <span style="color: rgba(65, 21, 8, 1);">AFRICAN ROOTS</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
-          <span style="color: rgba(65, 21, 8, 1);">GLOBAL VISION</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
-          <span style="color: rgba(65, 21, 8, 1);">BOLD IDENTITY</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
-          <span style="color: rgba(65, 21, 8, 1);">VIBRANT CREATIVITY</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
-          <span style="color: rgba(65, 21, 8, 1);">TIMELESS STYLE</span> <span class="star" style="color: rgba(45, 110, 99, 1);">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">BOLD IDENTITY</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">VIBRANT CREATIVITY</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">TIMELESS STYLE</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">AFRICAN ROOTS</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">GLOBAL VISION</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">BOLD IDENTITY</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">VIBRANT CREATIVITY</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">TIMELESS STYLE</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
         </div>
       </div>
     </marquee>
-
-
 
     <!-- Footer -->
 
