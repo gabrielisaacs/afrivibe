@@ -19,7 +19,7 @@
   <body>
     <header class="navbar" role="banner">
       <nav class="navbar__frame" aria-label="Main navigation">
-        <a href="/" aria-label="Afrivibe Fashion House - Home">
+        <a href="./Homepage.html" aria-label="Afrivibe Fashion House - Home">
           <img
             class="navbar__logo"
             src="./Assets/logo-nav.svg"
@@ -28,36 +28,41 @@
         </a>
         <ul class="navbar__nav-list" role="list">
           <li class="navbar__nav-item">
-            <a href="/" class="nav-link--active" aria-current="page">Home</a>
+            <a
+              href="./Homepage.html"
+              class="nav-link--active"
+              aria-current="page"
+              >Home</a
+            >
           </li>
           <li class="navbar__nav-item">
-            <a href="/about" class="nav-link">About</a>
+            <a href="./About.html" class="nav-link">About</a>
           </li>
           <li class="navbar__nav-item">
-            <a href="/collections" class="nav-link">Collections</a>
+            <a href="#featured__section" class="nav-link">Collections</a>
           </li>
           <li class="navbar__nav-item">
-            <a href="/team" class="nav-link">Team</a>
+            <a href="./team.html" class="nav-link">Team</a>
           </li>
           <li class="navbar__nav-item">
-            <a href="/contact" class="nav-link">Contact Us</a>
+            <a href="./contact.html" class="nav-link">Contact Us</a>
           </li>
         </ul>
         <div class="navbar__cta-group">
-          <button
-            type="button"
+          <a
+            href="./Homepage.html"
             class="button button--primary"
             aria-label="Go to Home"
           >
             Home
-          </button>
-          <button
-            type="button"
+          </a>
+          <a
+            href="#featured__section"
             class="button button--secondary"
             aria-label="Go to Shop"
           >
             Shop
-          </button>
+          </a>
         </div>
       </nav>
     </header>
@@ -89,12 +94,12 @@
           </p>
         </div>
         <div class="hero-cta">
-          <button class="button--primary">
+          <a href="#featured__section" class="button--primary">
             <div class="button__text">Shop now</div>
-          </button>
-          <button class="button--outline">
+          </a>
+          <a href="#featured__section" class="button--outline">
             <div class="button__text--secondary">Explore our looks</div>
-          </button>
+          </a>
         </div>
       </div>
       <img class="hero-image" src="Assets/hero-image.png" />
@@ -180,17 +185,24 @@
             silhouettes.
           </p>
           <div class="carousel-controls">
-            <div class="carousel-button">
-              <img
+            <button class="carousel-button">
+              <svg
                 class="carousel-button__icon"
-                src="Assets/chevron right.svg"
-              />
-            </div>
-            <div class="carousel-button next-arrow__button">
-              <!-- <img
-                class="carousel-button__icon next-arrow__icon"
-                src="Assets/chevron left2.svg"
-              /> -->
+                width="36"
+                height="36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.5 27l-9-9 9-9"
+                  stroke="#fff"
+                  stroke-width="2.25"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button class="carousel-button next-arrow__button">
               <svg
                 class="carousel-button__icon next-arrow__icon"
                 width="36"
@@ -206,7 +218,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -282,9 +294,9 @@
           </div>
         </div>
       </div>
-      <div class="button--view-all">
+      <button class="button--view-all">
         <div class="button__text--view-all">View All Products</div>
-      </div>
+      </button>
     </div>
 
     <!-- About us section -->
@@ -348,9 +360,9 @@
             </div>
           </div>
         </div>
-        <button class="button--read-more">
+        <a href="./About.html" class="button--read-more">
           <div class="button__text--read-more">Read more</div>
-        </button>
+        </a>
       </div>
     </div>
 
@@ -375,7 +387,21 @@
       </div>
       <div class="testimonial__carousel">
         <button class="carousel-button">
-          <img class="carousel-button__icon" src="Assets/chevron right.svg" />
+          <svg
+            class="testimonial-carousel--button__icon"
+            width="36"
+            height="36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M22.5 27l-9-9 9-9"
+              stroke="#000"
+              stroke-width="2.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </button>
 
         <div class="testimonial__avatar testimonial__slide--prev">
@@ -407,7 +433,21 @@
         </div>
 
         <button class="carousel-button">
-          <img class="carousel-button__icon" src="Assets/chevron left2.svg" />
+          <svg
+            class="testimonial-carousel--button__icon next-arrow__icon"
+            width="36"
+            height="36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M22.5 27l-9-9 9-9"
+              stroke="#000"
+              stroke-width="2.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </button>
       </div>
     </div>
@@ -435,7 +475,7 @@
               id="newsletter-input"
               placeholder="Enter email"
             />
-            <button class="button--submit">Subscribe</button>
+            <button class="button--submit" type="submit">Subscribe</button>
           </div>
         </div>
       </div>
@@ -457,28 +497,32 @@
             <div class="footer__nav-section">
               <div class="footer__heading">Explore</div>
               <div class="footer__links-group">
-                <div class="footer__link">Home</div>
-                <div class="footer__link">About Us</div>
-                <div class="footer__link">Solutions</div>
-                <div class="footer__link">Blog</div>
+                <a href="./Homepage.html" class="footer__link">Home</a>
+                <a href="./About.html" class="footer__link">About Us</a>
+                <a href="#featured__section" class="footer__link"
+                  >Collections</a
+                >
+                <a href="./contact.html" class="footer__link">Contact Us</a>
               </div>
             </div>
             <div class="footer__nav-section">
-              <div class="footer__heading">Solutions</div>
+              <div class="footer__heading">Company</div>
               <div class="footer__links-group">
-                <div class="footer__link">Freight Management</div>
-                <div class="footer__link">Order Tracking</div>
-                <div class="footer__link">Carrier Integration</div>
-                <div class="footer__link">Analytics Dashboard</div>
+                <a href="./team.html" class="footer__link">Our Team</a>
+                <a href="#featured__section" class="footer__link"
+                  >Featured Collections</a
+                >
+                <a href="./About.html" class="footer__link">About Afrivibe</a>
+                <a href="./contact.html" class="footer__link">Get in Touch</a>
               </div>
             </div>
             <div class="footer__nav-section">
-              <div class="footer__heading">Resources</div>
+              <div class="footer__heading">Legal</div>
               <div class="footer__links-group">
-                <div class="footer__link">Help Center</div>
-                <div class="footer__link">FAQs</div>
-                <div class="footer__link">Terms of Service</div>
-                <div class="footer__link">Privacy Policy</div>
+                <a href="#" class="footer__link">Privacy Policy</a>
+                <a href="#" class="footer__link">Terms of Service</a>
+                <a href="#" class="footer__link">Cookie Policy</a>
+                <a href="#" class="footer__link">Contact</a>
               </div>
             </div>
           </div>
@@ -492,27 +536,39 @@
               <p class="footer__copyright-text">
                 ©2026 Afrivibe. All Rights Reserved.
               </p>
-              <div class="footer__legal-link">Terms &amp; Condition</div>
-              <div class="footer__legal-link">Privacy Policies</div>
+              <a href="#" class="footer__legal-link">Terms &amp; Condition</a>
+              <a href="#" class="footer__legal-link">Privacy Policies</a>
             </div>
             <div class="footer__socials">
-              <div class="footer__social-button">
+              <a
+                href="https://twitter.com"
+                class="footer__social-button"
+                aria-label="Visit our Twitter"
+              >
                 <img class="footer__social-icon" src="/Assets/twitter.svg" />
-              </div>
-              <div class="footer__social-button">
+              </a>
+              <a
+                href="https://instagram.com"
+                class="footer__social-button"
+                aria-label="Visit our Instagram"
+              >
                 <img
                   class="footer__social-icon"
                   src="Assets/instagram-fill.svg"
                 />
-              </div>
-              <div class="footer__social-button">
+              </a>
+              <a
+                href="https://linkedin.com"
+                class="footer__social-button"
+                aria-label="Visit our LinkedIn"
+              >
                 <img class="footer__social-icon" src="Assets/Linkedin.svg" />
-              </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <!-- <script type="module" src="script.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>
