@@ -314,3 +314,17 @@
   font-weight: 400;
   font-size: 16px;
 }
+
+/* Team member image zoom hover animation */
+.team-member-card__image,
+.content-image,
+.content1-image {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-member-card__image:hover,
+.content-image:hover,
+.content1-image:hover {
+  transform: scale(1.08);
+}
+}
