@@ -248,4 +248,251 @@ document.addEventListener("DOMContentLoaded", () => {
       updateTestimonial(0);
     }, 100);
   }
+
+  // Collections Page Functionality
+  const collectionsSection = document.getElementById("collections-section");
+  if (collectionsSection) {
+    // Product data with attributes for filtering
+    const allProducts = [
+      { id: 1, name: "Radiant Glow Cream", category: "skincare", price: 28, color: "gold", image: "Assets/Frame 2147228524.png", badge: "New", status: "active" },
+      { id: 2, name: "Flawless Finish Foundation", category: "skincare", price: 15, color: "white", image: "Assets/Screenshot 2026-02-24 225640 1.png", badge: "", status: "active" },
+      { id: 3, name: "Hydra Restore Moisturizer", category: "skincare", price: 32, color: "white", image: "Assets/Screenshot 2025-11-18 071445 1.png", badge: "", status: "active" },
+      { id: 4, name: "Revive Radiance Serum", category: "skincare", price: 38, color: "gold", image: "Assets/Frame 2147228521.png", badge: "Sale", status: "sale", originalPrice: 48 },
+      { id: 5, name: "Vibrant Essence Palette", category: "makeup", price: 42, color: "gold", image: "Assets/Frame 2147228522.png", badge: "", status: "active" },
+      { id: 6, name: "Heritage Silk Wrap", category: "accessories", price: 55, color: "earth", image: "Assets/Frame 2147228524.png", badge: "New", status: "active" },
+      { id: 7, name: "Golden Kente Dress", category: "dresses", price: 125, color: "gold", image: "Assets/Screenshot 2026-02-24 225640 1.png", badge: "", status: "active" },
+      { id: 8, name: "Ankara Print Blazer", category: "tops", price: 95, color: "earth", image: "Assets/Screenshot 2025-11-18 071445 1.png", badge: "", status: "active" },
+      { id: 9, name: "Beaded Necklace", category: "accessories", price: 32, color: "gold", image: "Assets/Frame 2147228521.png", badge: "Sale", status: "sale", originalPrice: 45 },
+      { id: 10, name: "Shea Butter Collection", category: "skincare", price: 38, color: "white", image: "Assets/Frame 2147228522.png", badge: "", status: "active" },
+      { id: 11, name: "Mud Cloth Bag", category: "accessories", price: 65, color: "earth", image: "Assets/Frame 2147228524.png", badge: "", status: "active" },
+      { id: 12, name: "Tribal Earrings", category: "accessories", price: 28, color: "gold", image: "Assets/Screenshot 2026-02-24 225640 1.png", badge: "New", status: "active" }
+    ];
+
+    let filteredProducts = [...allProducts];
+    let currentPage = 1;
+    const productsPerPage = 12;
+    let currentSort = "featured";
+    const activeFilters = {
+      categories: [],
+      prices: [],
+      colors: []
+    };
+
+    // Get filter elements
+    const categoryCheckboxes = document.querySelectorAll('input[name="category"]');
+    const priceCheckboxes = document.querySelectorAll('input[name="price"]');
+    const colorCheckboxes = document.querySelectorAll('input[name="color"]');
+    const resetButton = document.querySelector(".filters__reset");
+    const sortSelect = document.getElementById("sort-select");
+    const paginationButtons = document.querySelectorAll(".pagination__number");
+    const prevPaginationBtn = document.querySelector(".pagination__button--prev");
+    const nextPaginationBtn = document.querySelector(".pagination__button--next");
+    const productCountSpan = document.getElementById("product-count");
+    const productsGrid = document.querySelector(".products-grid");
+
+    // Filter function
+    const filterAndSort = () => {
+      // Start with all products
+      filteredProducts = allProducts.filter((product) => {
+        const categoryMatch =
+          activeFilters.categories.length === 0 ||
+          activeFilters.categories.includes(product.category);
+        const colorMatch =
+          activeFilters.colors.length === 0 ||
+          activeFilters.colors.includes(product.color);
+        
+        let priceMatch = true;
+        if (activeFilters.prices.length > 0) {
+          priceMatch = activeFilters.prices.some((range) => {
+            const [min, max] = range === "200+" ? [200, Infinity] : range.split("-").map(Number);
+            return product.price >= min && product.price <= max;
+          });
+        }
+
+        return categoryMatch && colorMatch && priceMatch;
+      });
+
+      // Apply sorting
+      switch (currentSort) {
+        case "price-low":
+          filteredProducts.sort((a, b) => a.price - b.price);
+          break;
+        case "price-high":
+          filteredProducts.sort((a, b) => b.price - a.price);
+          break;
+        case "newest":
+          filteredProducts.sort((a, b) => (b.badge === "New" ? 1 : -1));
+          break;
+        case "best-selling":
+          filteredProducts.sort((a, b) => a.id - b.id); // Placeholder sort
+          break;
+        case "featured":
+        default:
+          filteredProducts.sort((a, b) => a.id - b.id);
+      }
+
+      currentPage = 1;
+      updateDisplay();
+    };
+
+    // Update display
+    const updateDisplay = () => {
+      const startIndex = (currentPage - 1) * productsPerPage;
+      const endIndex = startIndex + productsPerPage;
+      const displayedProducts = filteredProducts.slice(startIndex, endIndex);
+
+      // Update product count
+      if (productCountSpan) {
+        productCountSpan.textContent = `Showing ${displayedProducts.length} of ${filteredProducts.length} products`;
+      }
+
+      // Render products
+      if (productsGrid) {
+        // Helper function to truncate text
+        const truncateText = (text, maxLength) => {
+          return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
+        };
+
+        productsGrid.innerHTML = displayedProducts.map((product) => {
+          const badgeHTML = product.badge ? `<span class="product-card__badge${product.badge === "Sale" ? " sale" : ""}">${product.badge}</span>` : "";
+          const priceHTML = product.status === "sale"
+            ? `<span class="product-card__price"><span class="product-card__price--original">$${product.originalPrice}.00</span><span class="product-card__price--sale">$${product.price}.00</span></span>`
+            : `<div class="product-card__price">$${product.price}.00</div>`;
+          
+          // Truncate product name to fit in card (approximately 30 characters for ~24px font)
+          const truncatedName = truncateText(product.name, 30);
+          
+          // Truncate product description (approximately 50 characters for ~16px font)
+          const fullDescription = "Premium quality product from Afrivibe's curated collection.";
+          const truncatedDescription = truncateText(fullDescription, 50);
+
+          return `
+            <div class="product-card collections__product-card">
+              <div class="product-card__image">
+                <img src="${product.image}" alt="${product.name}" />
+                ${badgeHTML}
+              </div>
+              <div class="product-card__details">
+                <div class="product-card__info">
+                  <div class="product-card__title" title="${product.name}">${truncatedName}</div>
+                  <p class="product-card__description" title="${fullDescription}">${truncatedDescription}</p>
+                </div>
+                ${priceHTML}
+                <button class="product-card__cta" aria-label="Add ${product.name} to cart">Add to Cart</button>
+              </div>
+            </div>
+          `;
+        }).join("");
+      }
+
+      updatePagination();
+    };
+
+    // Update pagination
+    const updatePagination = () => {
+      const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+
+      // Update pagination buttons
+      paginationButtons.forEach((btn) => {
+        const page = parseInt(btn.dataset.page);
+        if (page === currentPage) {
+          btn.classList.add("pagination__number--active");
+        } else {
+          btn.classList.remove("pagination__number--active");
+        }
+      });
+
+      // Update prev/next buttons
+      if (prevPaginationBtn) {
+        prevPaginationBtn.disabled = currentPage === 1;
+      }
+      if (nextPaginationBtn) {
+        nextPaginationBtn.disabled = currentPage === totalPages;
+      }
+    };
+
+    // Add checkbox event listeners
+    categoryCheckboxes.forEach((checkbox) => {
+      checkbox.addEventListener("change", () => {
+        activeFilters.categories = Array.from(categoryCheckboxes)
+          .filter((cb) => cb.checked)
+          .map((cb) => cb.value);
+        filterAndSort();
+      });
+    });
+
+    priceCheckboxes.forEach((checkbox) => {
+      checkbox.addEventListener("change", () => {
+        activeFilters.prices = Array.from(priceCheckboxes)
+          .filter((cb) => cb.checked)
+          .map((cb) => cb.value);
+        filterAndSort();
+      });
+    });
+
+    colorCheckboxes.forEach((checkbox) => {
+      checkbox.addEventListener("change", () => {
+        activeFilters.colors = Array.from(colorCheckboxes)
+          .filter((cb) => cb.checked)
+          .map((cb) => cb.value);
+        filterAndSort();
+      });
+    });
+
+    // Reset filters
+    if (resetButton) {
+      resetButton.addEventListener("click", () => {
+        categoryCheckboxes.forEach((cb) => (cb.checked = false));
+        priceCheckboxes.forEach((cb) => (cb.checked = false));
+        colorCheckboxes.forEach((cb) => (cb.checked = false));
+        activeFilters.categories = [];
+        activeFilters.prices = [];
+        activeFilters.colors = [];
+        currentSort = "featured";
+        if (sortSelect) sortSelect.value = "featured";
+        filterAndSort();
+      });
+    }
+
+    // Sort event listener
+    if (sortSelect) {
+      sortSelect.addEventListener("change", (e) => {
+        currentSort = e.target.value;
+        filterAndSort();
+      });
+    }
+
+    // Pagination event listeners
+    paginationButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        currentPage = parseInt(btn.dataset.page);
+        updateDisplay();
+        window.scrollTo({ top: collectionsSection.offsetTop - 100, behavior: "smooth" });
+      });
+    });
+
+    if (prevPaginationBtn) {
+      prevPaginationBtn.addEventListener("click", () => {
+        if (currentPage > 1) {
+          currentPage--;
+          updateDisplay();
+          window.scrollTo({ top: collectionsSection.offsetTop - 100, behavior: "smooth" });
+        }
+      });
+    }
+
+    if (nextPaginationBtn) {
+      nextPaginationBtn.addEventListener("click", () => {
+        const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+        if (currentPage < totalPages) {
+          currentPage++;
+          updateDisplay();
+          window.scrollTo({ top: collectionsSection.offsetTop - 100, behavior: "smooth" });
+        }
+      });
+    }
+
+    // Initial display
+    updateDisplay();
+  }
 });

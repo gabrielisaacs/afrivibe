@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="marquee.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="collections.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <header class="navbar" role="banner">
+      <nav class="navbar__frame" aria-label="Main navigation">
+        <a href="./Homepage.html" aria-label="Afrivibe Fashion House - Home">
+          <img
+            class="navbar__logo"
+            src="./Assets/logo-nav.svg"
+            alt="Afrivibe Fashion House logo"
+          />
+        </a>
+        <ul class="navbar__nav-list" role="list">
+          <li class="navbar__nav-item">
+            <a href="./Homepage.html" class="nav-link">Home</a>
+          </li>
+          <li class="navbar__nav-item">
+            <a href="./About.html" class="nav-link">About</a>
+          </li>
+          <li class="navbar__nav-item">
+            <a
+              href="./collections.html"
+              class="nav-link--active"
+              aria-current="page"
+              >Collections</a
+            >
+          </li>
+          <li class="navbar__nav-item">
+            <a href="./team.html" class="nav-link">Team</a>
+          </li>
+          <li class="navbar__nav-item">
+            <a href="./contact.html" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+        <div class="navbar__cta-group">
+          <a
+            href="./Homepage.html"
+            class="button button--primary"
+            aria-label="Go to Home"
+          >
+            Home
+          </a>
+          <a
+            href="./collections.html"
+            class="button button--secondary"
+            aria-label="Go to Collections"
+          >
+            Shop
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Collections Hero Section -->
+
+    <div class="collection-header">
+        <div class="collection-header__background">
+            <img class="collection-header__pattern" src="Assets/about-header-pattern.svg" />
+        <div class="collection-header__title">Our Trendy</div>
+        <img class="collection-header__image" src="Assets/Screenshot_2026-03-16_203652_1-removebg-preview 1.png" />
+        <div class="collection-header__subtitle">Collections</div>
+    </div>
+
+    <!-- Collections Section -->
+
+    <section class="collections" id="collections-section">
+      <div class="collections__container">
+        <aside class="collections__sidebar">
+          <div class="filters">
+            <div class="filters__header">
+              <h2 class="filters__title">Filters</h2>
+              <button class="filters__reset" aria-label="Reset all filters">
+                Reset
+              </button>
+            </div>
+
+            <!-- Category Filter -->
+
+            <div class="filter-group">
+              <h3 class="filter-group__title">Category</h3>
+              <div class="filter-group__options">
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="category" value="dresses" />
+                  <span class="filter-checkbox__label">Dresses</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="category" value="tops" />
+                  <span class="filter-checkbox__label">Tops</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="category" value="bottoms" />
+                  <span class="filter-checkbox__label">Bottoms</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="category" value="accessories" />
+                  <span class="filter-checkbox__label">Accessories</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Price Filter -->
+
+            <div class="filter-group">
+              <h3 class="filter-group__title">Price Range</h3>
+              <div class="filter-group__options">
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="price" value="0-50" />
+                  <span class="filter-checkbox__label">$0 - $50</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="price" value="50-100" />
+                  <span class="filter-checkbox__label">$50 - $100</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="price" value="100-200" />
+                  <span class="filter-checkbox__label">$100 - $200</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="price" value="200+" />
+                  <span class="filter-checkbox__label">$200+</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Color Filter -->
+
+            <div class="filter-group">
+              <h3 class="filter-group__title">Color</h3>
+              <div class="filter-group__options">
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="color" value="black" />
+                  <span class="filter-checkbox__label">Black</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="color" value="white" />
+                  <span class="filter-checkbox__label">White</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="color" value="gold" />
+                  <span class="filter-checkbox__label">Gold</span>
+                </label>
+                <label class="filter-checkbox">
+                  <input type="checkbox" name="color" value="earth" />
+                  <span class="filter-checkbox__label">Earth Tones</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Products Section -->
+
+        <div class="collections__main">
+          <!-- Toolbar -->
+          <div class="collections__toolbar">
+            <div class="toolbar__left">
+              <span class="toolbar__count" id="product-count"
+                >Showing 12 products</span
+              >
+            </div>
+            <div class="toolbar__right">
+              <label class="toolbar__label" for="sort-select">Sort by:</label>
+              <select
+                id="sort-select"
+                class="toolbar__select"
+                aria-label="Sort products"
+              >
+                <option value="featured">Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="newest">Newest</option>
+                <option value="best-selling">Best Selling</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+
+          <div class="products-grid">
+            <div class="product-card collections__product-card">
+              <div class="product-card__image">
+                <img
+                  src="Assets/Frame 2147228524.png"
+                  alt="Radiant Glow Cream"
+                />
+                <span class="product-card__badge">New</span>
+              </div>
+              <div class="product-card__details">
+                <div class="product-card__info">
+                  <div class="product-card__title">Radiant Glow Cream</div>
+                  <p class="product-card__description">
+                    Deep hydration for smooth, luminous skin.
+                  </p>
+                </div>
+                <div class="product-card__price">$28.00</div>
+                <button
+                  class="product-card__cta"
+                  aria-label="Add Radiant Glow Cream to cart"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card collections__product-card">
+              <div class="product-card__image">
+                <img
+                  src="Assets/Screenshot 2026-02-24 225640 1.png"
+                  alt="Flawless Finish Foundation"
+                />
+              </div>
+              <div class="product-card__details">
+                <div class="product-card__info">
+                  <div class="product-card__title">
+                    Flawless Finish Foundation
+                  </div>
+                  <p class="product-card__description">
+                    Even coverage for a natural, radiant look.
+                  </p>
+                </div>
+                <div class="product-card__price">$15.00</div>
+                <button
+                  class="product-card__cta"
+                  aria-label="Add Flawless Finish Foundation to cart"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card collections__product-card">
+              <div class="product-card__image">
+                <img
+                  src="Assets/Screenshot 2025-11-18 071445 1.png"
+                  alt="Hydra Restore Moisturizer"
+                />
+              </div>
+              <div class="product-card__details">
+                <div class="product-card__info">
+                  <div class="product-card__title">
+                    Hydra Restore Moisturizer
+                  </div>
+                  <p class="product-card__description">
+                    Lightweight cream that replenishes and soothes skin.
+                  </p>
+                </div>
+                <div class="product-card__price">$32.00</div>
+                <button
+                  class="product-card__cta"
+                  aria-label="Add Hydra Restore Moisturizer to cart"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card collections__product-card">
+              <div class="product-card__image">
+                <img
+                  src="Assets/Frame 2147228521.png"
+                  alt="Revive Radiance Serum"
+                />
+                <span class="product-card__badge sale">Sale</span>
+              </div>
+              <div class="product-card__details">
+                <div class="product-card__info">
+                  <div class="product-card__title">Revive Radiance Serum</div>
+                  <p class="product-card__description">
+                    Powerful formula to brighten and restore glow.
+                  </p>
+                </div>
+                <div class="product-card__price">
+                  <span class="product-card__price--original">$48.00</span>
+                  <span class="product-card__price--sale">$38.00</span>
+                </div>
+                <button
+                  class="product-card__cta"
+                  aria-label="Add Revive Radiance Serum to cart"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card collections__product-card">
+              <div class="product-card__image">
+                <img
+                  src="Assets/Frame 2147228522.png"
+                  alt="Vibrant Essence Palette"
+                />
+              </div>
+              <div class="product-card__details">
+                <div class="product-card__info">
+                  <div class="product-card__title">Vibrant Essence Palette</div>
+                  <p class="product-card__description">
+                    Multi-shade collection inspired by African sunsets.
+                  </p>
+                </div>
+                <div class="product-card__price">$42.00</div>
+                <button
+                  class="product-card__cta"
+                  aria-label="Add Vibrant Essence Palette to cart"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card collections__product-card">
+              <div class="product-card__image">
+                <img
+                  src="Assets/Frame 2147228524.png"
+                  alt="Heritage Silk Wrap"
+                />
+                <span class="product-card__badge">New</span>
+              </div>
+              <div class="product-card__details">
+                <div class="product-card__info">
+                  <div class="product-card__title">Heritage Silk Wrap</div>
+                  <p class="product-card__description">
+                    Traditional patterns meet modern elegance.
+                  </p>
+                </div>
+                <div class="product-card__price">$55.00</div>
+                <button
+                  class="product-card__cta"
+                  aria-label="Add Heritage Silk Wrap to cart"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card collections__product-card">
+              <div class="product-card__image">
+                <img
+                  src="Assets/Screenshot 2026-02-24 225640 1.png"
+                  alt="Golden Kente Dress"
+                />
+              </div>
+              <div class="product-card__details">
+                <div class="product-card__info">
+                  <div class="product-card__title">Golden Kente Dress</div>
+                  <p class="product-card__description">
+                    Bold statement piece with authentic Kente patterns.
+                  </p>
+                </div>
+                <div class="product-card__price">$125.00</div>
+                <button
+                  class="product-card__cta"
+                  aria-label="Add Golden Kente Dress to cart"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card collections__product-card">
+              <div class="product-card__image">
+                <img
+                  src="Assets/Screenshot 2025-11-18 071445 1.png"
+                  alt="Ankara Print Blazer"
+                />
+              </div>
+              <div class="product-card__details">
+                <div class="product-card__info">
+                  <div class="product-card__title">Ankara Print Blazer</div>
+                  <p class="product-card__description">
+                    Contemporary blazer with vibrant Ankara fabric.
+                  </p>
+                </div>
+                <div class="product-card__price">$95.00</div>
+                <button
+                  class="product-card__cta"
+                  aria-label="Add Ankara Print Blazer to cart"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card collections__product-card">
+              <div class="product-card__image">
+                <img src="Assets/Frame 2147228521.png" alt="Beaded Necklace" />
+                <span class="product-card__badge sale">Sale</span>
+              </div>
+              <div class="product-card__details">
+                <div class="product-card__info">
+                  <div class="product-card__title">Beaded Necklace</div>
+                  <p class="product-card__description">
+                    Handcrafted beaded necklace with African artistry.
+                  </p>
+                </div>
+                <div class="product-card__price">
+                  <span class="product-card__price--original">$45.00</span>
+                  <span class="product-card__price--sale">$32.00</span>
+                </div>
+                <button
+                  class="product-card__cta"
+                  aria-label="Add Beaded Necklace to cart"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card collections__product-card">
+              <div class="product-card__image">
+                <img
+                  src="Assets/Frame 2147228522.png"
+                  alt="Shea Butter Collection"
+                />
+              </div>
+              <div class="product-card__details">
+                <div class="product-card__info">
+                  <div class="product-card__title">Shea Butter Collection</div>
+                  <p class="product-card__description">
+                    Pure, organic shea butter skincare essentials.
+                  </p>
+                </div>
+                <div class="product-card__price">$38.00</div>
+                <button
+                  class="product-card__cta"
+                  aria-label="Add Shea Butter Collection to cart"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card collections__product-card">
+              <div class="product-card__image">
+                <img src="Assets/Frame 2147228524.png" alt="Mud Cloth Bag" />
+              </div>
+              <div class="product-card__details">
+                <div class="product-card__info">
+                  <div class="product-card__title">Mud Cloth Bag</div>
+                  <p class="product-card__description">
+                    Eco-friendly tote with traditional mud cloth design.
+                  </p>
+                </div>
+                <div class="product-card__price">$65.00</div>
+                <button
+                  class="product-card__cta"
+                  aria-label="Add Mud Cloth Bag to cart"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card collections__product-card">
+              <div class="product-card__image">
+                <img
+                  src="Assets/Screenshot 2026-02-24 225640 1.png"
+                  alt="Tribal Earrings"
+                />
+                <span class="product-card__badge">New</span>
+              </div>
+              <div class="product-card__details">
+                <div class="product-card__info">
+                  <div class="product-card__title">Tribal Earrings</div>
+                  <p class="product-card__description">
+                    Statement earrings inspired by tribal heritage.
+                  </p>
+                </div>
+                <div class="product-card__price">$28.00</div>
+                <button
+                  class="product-card__cta"
+                  aria-label="Add Tribal Earrings to cart"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <button
+              class="pagination__button pagination__button--prev"
+              aria-label="Previous page"
+            >
+              Previous
+            </button>
+            <div class="pagination__numbers">
+              <button
+                class="pagination__number pagination__number--active"
+                data-page="1"
+              >
+                1
+              </button>
+              <button class="pagination__number" data-page="2">2</button>
+              <button class="pagination__number" data-page="3">3</button>
+              <span class="pagination__ellipsis">...</span>
+              <button class="pagination__number" data-page="5">5</button>
+            </div>
+            <button
+              class="pagination__button pagination__button--next"
+              aria-label="Next page"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+
+    <marquee scrollamount="0" class="marquee-container">
+      <div class="scrolling-wrapper">
+        <div class="text-group">
+          <span style="color: rgba(65, 21, 8, 1)">SHOP NOW</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">EXCLUSIVE DESIGNS</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">LIMITED EDITION</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">PREMIUM QUALITY</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">FREE SHIPPING</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+        </div>
+
+        <div class="text-group" aria-hidden="true">
+          <span style="color: rgba(65, 21, 8, 1)">SHOP NOW</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">EXCLUSIVE DESIGNS</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">LIMITED EDITION</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">PREMIUM QUALITY</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+          <span style="color: rgba(65, 21, 8, 1)">FREE SHIPPING</span>
+          <span class="star" style="color: rgba(45, 110, 99, 1)">✦</span>
+        </div>
+      </div>
+    </marquee>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__main">
+          <div class="footer__about">
+            <img class="footer__logo" src="/Assets/logo-nav.svg" />
+            <p class="footer__description">
+              Afrivibe delivers reliable and blah blah blah-driven fashion
+              solutions that simplify fashion fashion in fashion whatever.
+            </p>
+          </div>
+          <div class="footer__nav">
+            <div class="footer__nav-section">
+              <div class="footer__heading">Explore</div>
+              <div class="footer__links-group">
+                <a href="./Homepage.html" class="footer__link">Home</a>
+                <a href="./About.html" class="footer__link">About Us</a>
+                <a href="./collections.html" class="footer__link"
+                  >Collections</a
+                >
+                <a href="./contact.html" class="footer__link">Contact Us</a>
+              </div>
+            </div>
+            <div class="footer__nav-section">
+              <div class="footer__heading">Company</div>
+              <div class="footer__links-group">
+                <a href="./team.html" class="footer__link">Our Team</a>
+                <a href="./collections.html" class="footer__link"
+                  >Featured Collections</a
+                >
+                <a href="./About.html" class="footer__link">About Afrivibe</a>
+                <a href="./contact.html" class="footer__link">Get in Touch</a>
+              </div>
+            </div>
+            <div class="footer__nav-section">
+              <div class="footer__heading">Legal</div>
+              <div class="footer__links-group">
+                <a href="#" class="footer__link">Privacy Policy</a>
+                <a href="#" class="footer__link">Terms of Service</a>
+                <a href="#" class="footer__link">Cookie Policy</a>
+                <a href="#" class="footer__link">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__sub-content">
+          <div class="footer__pattern-wrapper">
+            <img class="footer__pattern" src="Assets/pattern-filled.svg" />
+          </div>
+          <div class="footer__copyright">
+            <div class="footer__copyright-content">
+              <p class="footer__copyright-text">
+                ©2026 Afrivibe. All Rights Reserved.
+              </p>
+              <a href="#" class="footer__legal-link">Terms &amp; Condition</a>
+              <a href="#" class="footer__legal-link">Privacy Policies</a>
+            </div>
+            <div class="footer__socials">
+              <a
+                href="https://twitter.com"
+                class="footer__social-button"
+                aria-label="Visit our Twitter"
+              >
+                <img class="footer__social-icon" src="/Assets/twitter.svg" />
+              </a>
+              <a
+                href="https://instagram.com"
+                class="footer__social-button"
+                aria-label="Visit our Instagram"
+              >
+                <img
+                  class="footer__social-icon"
+                  src="Assets/instagram-fill.svg"
+                />
+              </a>
+              <a
+                href="https://linkedin.com"
+                class="footer__social-button"
+                aria-label="Visit our LinkedIn"
+              >
+                <img class="footer__social-icon" src="Assets/Linkedin.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
