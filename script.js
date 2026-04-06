@@ -1,5 +1,19 @@
 // Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", () => {
+  // Truncate product descriptions to 55 characters
+  const truncateDescriptions = (maxChars = 55) => {
+    const descriptions = document.querySelectorAll(".product-card__description");
+    descriptions.forEach((desc) => {
+      const originalText = desc.textContent.trim();
+      if (originalText.length > maxChars) {
+        desc.textContent = originalText.substring(0, maxChars) + "...";
+      }
+    });
+  };
+
+  // Run truncation on page load
+  truncateDescriptions();
+
   // Carousel functionality for featured section
   const productsWrapper = document.querySelector(".products-wrapper");
   const carouselButtons = document.querySelectorAll(".featured .carousel-button");
