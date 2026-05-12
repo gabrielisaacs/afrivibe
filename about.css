@@ -72,6 +72,7 @@ flex-direction: column;
 align-items: flex-start;
 justify-content: flex-end;
 width: 100%;
+height: max-content;
 padding: 160px 100px;
 position: relative;
 background-color: #fffffff0;
@@ -83,7 +84,7 @@ border-color: #ffffff1a;
 
 .about__content {
 display: flex;
-height: 711px;
+height: max-content;
 align-items: flex-start;
 justify-content: space-between;
 position: relative;
@@ -142,10 +143,9 @@ line-height: normal;
 position: relative;
 align-self: stretch;
 height: 151px;
-margin-bottom: -29.00px;
 font-family: "Bricolage Grotesque", Helvetica;
 font-weight: 700;
-color: var( --variable-collection-green);
+color: var(--variable-collection-green);
 font-size: 72px;
 letter-spacing: 0;
 line-height: 74px;
@@ -155,6 +155,7 @@ line-height: 74px;
 display: flex;
 flex-direction: column;
 width: 637px;
+height: max-content;
 align-items: flex-start;
 position: relative;
 flex: 0 0 auto;
@@ -163,33 +164,20 @@ flex: 0 0 auto;
 .about__description {
 position: relative;
 align-self: stretch;
-height: 322px;
-margin-top: -1.00px;
+width: 100%;
+height: auto;
 font-family: "Geist", Helvetica;
 font-weight: 400;
 color: #000000;
 font-size: 18px;
 letter-spacing: 0;
 line-height: normal;
-}
-
-.about__description-extended {
-position: relative;
-width: 637px;
-height: 300px;
-font-family: "Geist", Helvetica;
-font-weight: 400;
-color: #000000;
-font-size: 18px;
-letter-spacing: 0;
-line-height: normal;
-
 }
 
 .about__image {
 position: relative;
 width: 545px;
-height: 711px;
+height: 646px;
 object-fit: cover;
 border-radius: 16px;
 margin-left: auto;
@@ -332,18 +320,17 @@ line-height: normal;
 }
 
 .about-vision-mission__mission-section {
-width: 1312px;
-height: 657px;
+width: 100%;
+height: max-content;
 justify-content: space-between;
 display: flex;
 align-items: flex-start;
-position: relative;
 }
 
 .about-vision-mission__image {
 position: relative;
 width: 610px;
-height: 657px;
+height: 784px;
 object-fit: cover;
 border-radius: 16px;
 }
@@ -352,6 +339,7 @@ border-radius: 16px;
 display: flex;
 flex-direction: column;
 width: 665px;
+height: 784px;
 align-items: flex-start;
 gap: 29px;
 padding: 60px;
