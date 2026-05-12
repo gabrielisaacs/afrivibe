@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Run truncation on page load
   truncateDescriptions();
 
+
   // Carousel functionality for featured section
   const productsWrapper = document.querySelector(".products-wrapper");
   const carouselButtons = document.querySelectorAll(".featured .carousel-button");
